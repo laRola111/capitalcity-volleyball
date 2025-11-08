@@ -10,6 +10,7 @@ import HeroSection from '@/components/organisms/HeroSection';
 
 export default async function HomePage({ params: { lang } }) {
   const dict = await getDictionary(lang);
+  console.log(lang)
 
   return (
     <>

@@ -7,6 +7,6 @@ const dictionaries = {
 
 export const getDictionary = async (lang) => {
   // Si el idioma no es 'en' o 'es', usamos 'es' por defecto.
-  const langKey = dictionaries[lang] ? lang : 'es';
+  const langKey = dictionaries[lang] ? lang : 'en';
   return dictionaries[langKey]();
 };

@@ -56,9 +56,8 @@ export default function Header({ lang, dict }) {
   // --- Links de Navegación (con verificación de dict) ---
   const navLinks = dict ? [
     { name: dict.navbar?.home || 'Home', href: `/${lang}/` },
-    { name: dict.navbar?.breakfast || 'Breakfast', href: `/${lang}/menu/breakfast` },
-    { name: dict.navbar?.lunchDinner || 'Lunch & Dinner', href: `/${lang}/menu/lunch-dinner` },
-    { name: dict.navbar?.drinks || 'Drinks', href: `/${lang}/menu/drinks` },
+    { name: dict.navbar?.breakfast || 'Nosotros', href: `/${lang}/about` },
+    { name: dict.navbar?.lunchDinner || 'gallery', href: `/${lang}/gallery` },
   ] : [];
 
   // --- Manejadores ---
