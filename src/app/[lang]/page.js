@@ -1,26 +1,22 @@
 // src/app/[lang]/page.js
 import { getDictionary } from '@/lib/dictionaries';
 import HeroSection from '@/components/organisms/HeroSection';
-// import AboutSection from '@/components/organisms/AboutSection';
-// import DecorativeImageSection from '@/components/organisms/DecorativeImageSection'; // Ahora es la mini-galería con fondo blanco
-// import FeaturedItemsSection from '@/components/organisms/FeaturedItemsSection';
-// import GallerySection from '@/components/organisms/GallerySection'; // <-- Importar la nueva sección
-// import HoursContactSection from '@/components/organisms/HoursContactSection';
-// import ReviewsSection from '@/components/organisms/ReviewsSection';
+// --- Nuevos Componentes ---
+import SocialProofSection from '@/components/organisms/SocialProofSection';
+import ProgramsHomeSection from '@/components/organisms/ProgramsHomeSection';
+import TestimonialsSection from '@/components/organisms/TestimonialsSection';
+import CtaSection from '@/components/organisms/CtaSection';
 
 export default async function HomePage({ params: { lang } }) {
   const dict = await getDictionary(lang);
-  console.log(lang)
 
   return (
     <>
       <HeroSection lang={lang} dict={dict.hero} />
-      {/* <AboutSection lang={lang} dict={dict.about} /> */}
-      {/* <FeaturedItemsSection lang={lang} dict={dict.featuredItems} /> */}
-      {/* <GallerySection lang={lang} dict={dict} /> */}
-      {/* <ReviewsSection lang={lang} dict={dict.reviews} /> */}
-      {/* <DecorativeImageSection lang={lang} dict={dict} /> */}
-      {/* <HoursContactSection lang={lang} dict={dict.hoursContact} />    */}
+      <SocialProofSection lang={lang} dict={dict} />
+      <ProgramsHomeSection lang={lang} dict={dict} />
+      <TestimonialsSection lang={lang} dict={dict} />
+      <CtaSection lang={lang} dict={dict} />
     </>
   );
 }
