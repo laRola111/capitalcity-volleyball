@@ -83,13 +83,13 @@ export const dictionary = {
         title: "Liga Juvenil de Primavera",
         subtitle: "Edades 8-16",
         description: "Inscripciones abiertas para nuestra competitiva temporada de primavera.",
-        imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070&auto=format&fit=crop"
+        imageUrl: "/imgUpcoming-1"
       },
       {
         title: "Torneo Adulto Mixto",
         subtitle: "Noviembre 30",
         description: "Prepara a tu equipo para nuestro torneo competitivo de un día.",
-        imageUrl: "https://images.unsplash.com/photo-1521537634582-e5fde6b4064B?q=80&w=2070&auto=format&fit=crop"
+        imageUrl: "/imgUpcoming-2"
       }
     ]
   },

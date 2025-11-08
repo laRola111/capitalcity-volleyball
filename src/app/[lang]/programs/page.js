@@ -4,10 +4,10 @@ import Image from 'next/image';
 import { FaCheckCircle } from 'react-icons/fa';
 
 const placeholderImages = [
-  "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1542666070-21b8f0a82f23?q=80&w=1974&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1521537634582-e5fde6b4064B?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1579493933758-18c6d149c095?q=80&w=2070&auto=format&fit=crop"
+  "/imgProgram-1.png",
+  "/imgProgram-2.png",
+  "/imgProgram-3.png",
+  "/imgProgram-4.png"
 ];
 
 export default async function ProgramsPage({ params: { lang } }) {

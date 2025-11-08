@@ -84,13 +84,13 @@ export const dictionary = {
         title: "Spring Youth League",
         subtitle: "Ages 8-16",
         description: "Registrations now open for our competitive spring season.",
-        imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070&auto=format&fit=crop"
+        imageUrl: "/imgUpcoming-1"
       },
       {
         title: "Adult Co-Ed Tournament",
         subtitle: "November 30th",
         description: "Get your team ready for our one-day competitive tournament.",
-        imageUrl: "https://images.unsplash.com/photo-1521537634582-e5fde6b4064B?q=80&w=2070&auto=format&fit=crop"
+        imageUrl: "/imgUpcoming-2"
       }
     ]
   },

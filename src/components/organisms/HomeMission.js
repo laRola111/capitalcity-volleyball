@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FaEye, FaBullseye } from 'react-icons/fa'; // Iconos para Misión/Visión
+// import img from "../../../public/missionI.png"
 
 export default function HomeMission({ lang, dict }) {
   const t = dict.homeMission;
@@ -21,7 +22,7 @@ export default function HomeMission({ lang, dict }) {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1543398398-9995186f81e6?q=80&w=1974&auto=format&fit=crop"
+              src="/missionImg.png"
               alt="Team huddle"
               fill
               style={{ objectFit: 'cover' }}

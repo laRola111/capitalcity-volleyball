@@ -30,7 +30,9 @@ export default async function AboutPage({ params: { lang } }) {
           {/* Columna de Imagen */}
           <div className="relative h-96 w-full rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="https.images.unsplash.com/photo-1542666070-21b8f0a82f23?q=80&w=1974&auto=format&fit=crop"
+              // --- CORRECCIÓN AQUÍ ---
+              src="/imgAbout.png"
+              // --- FIN DE LA CORRECCIÓN ---
               alt="Jugadores de voleibol en la cancha"
               fill
               style={{ objectFit: 'cover' }}
