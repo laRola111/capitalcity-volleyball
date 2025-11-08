@@ -23,7 +23,7 @@ export default function TestimonialsSection({ lang, dict }) {
   const reviews = dict.testimonials.reviews || [];
 
   return (
-    <section className="bg-primary text-white py-20 sm:py-28">
+    <section className="bg-background text-white py-20 sm:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2 
           className="text-3xl font-bold tracking-tight text-center sm:text-4xl mb-12"

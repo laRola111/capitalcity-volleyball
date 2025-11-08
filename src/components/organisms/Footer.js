@@ -1,8 +1,8 @@
 // src/components/organisms/Footer.js
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'; // Asumiendo redes
-import logo from '../../../public/logo2.png';
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import logo from '../../../public/logo3.png'; // Usando logo3.png como pediste
 
 // Info del Cliente
 const contactData = {
@@ -18,7 +18,7 @@ const SocialLink = ({ href, icon: Icon, label }) => (
     target="_blank"
     rel="noopener noreferrer"
     aria-label={label}
-    className="text-secondary hover:text-accent transition-colors" // Usando nuevos colores
+    className="text-gray-300 hover:text-white transition-colors" 
   >
     <Icon size={24} />
   </a>
@@ -27,7 +27,6 @@ const SocialLink = ({ href, icon: Icon, label }) => (
 export default function Footer({ lang, dict }) {
   const currentYear = new Date().getFullYear();
   
-  // Usamos los nuevos links del diccionario
   const quickLinks = [
     { name: dict.navbar.home, href: `/${lang}/` },
     { name: dict.navbar.about, href: `/${lang}/about` },
@@ -46,8 +45,8 @@ export default function Footer({ lang, dict }) {
             <Link href={`/${lang}`} className="inline-block">
                <Image
                 src={logo}
-                alt="Capital City Volleyball Logo" // Texto Alt actualizado
-                height={40}
+                alt="Capital City Volleyball Logo" 
+                height={100} // Dejamos la altura que ajustaste
                 className="w-auto"
               />
             </Link>
@@ -70,14 +69,14 @@ export default function Footer({ lang, dict }) {
           {/* Columna 3: Contact Info */}
           <div className="md:justify-self-start">
              <h3 className="text-base font-semibold text-white mb-4">{dict.footer.contactInfo}</h3>
-             <address className="space-y-2 text-sm not-italic text-gray-300">
+             <address className="space-y-2 text-sm not-italic"> {/* Este color está bien */}
                <p>
-                 <a href={`tel:${contactData.phone}`} className="hover:text-white transition-colors">
+                 <a href={`tel:${contactData.phone}`} className=" text-gray-300 hover:text-white transition-colors">
                    {contactData.phone}
                  </a>
                </p>
                <p className="break-all">
-                 <a href={`mailto:${contactData.email}`} className="hover:text-white transition-colors">
+                 <a href={`mailto:${contactData.email}`} className=" text-gray-300 hover:text-white transition-colors">
                    {contactData.email}
                  </a>
                </p>
@@ -86,7 +85,7 @@ export default function Footer({ lang, dict }) {
                    href={contactData.googleMapsLink}
                    target="_blank"
                    rel="noopener noreferrer"
-                   className="hover:text-white transition-colors"
+                   className=" text-gray-300 hover:text-white transition-colors"
                  >
                    {contactData.address}
                  </a>
@@ -94,22 +93,28 @@ export default function Footer({ lang, dict }) {
              </address>
           </div>
 
-          {/* Columna 4: Follow Us */}
+           {/* Columna 4: Follow Us */}
            <div className="md:col-span-3 lg:col-span-1 lg:justify-self-end">
              <h3 className="text-base font-semibold text-white mb-4">{dict.footer.followUs}</h3>
+             {/* --- CAMBIO AQUÍ --- */}
+             {/* Descomentados para que se vean */}
              <div className="flex space-x-4">
-               {/* TODO: Pedir enlaces de redes sociales */}
-               {/* <SocialLink href="#" icon={FaFacebookF} label="Facebook" /> */}
-               {/* <SocialLink href="#" icon={FaInstagram} label="Instagram" /> */}
-               {/* <SocialLink href="#" icon={FaTwitter} label="Twitter" /> */}
+               <SocialLink href="#" icon={FaFacebookF} label="Facebook" />
+               <SocialLink href="#" icon={FaInstagram} label="Instagram" />
+               <SocialLink href="#" icon={FaTwitter} label="Twitter" />
              </div>
           </div>
         </div>
 
         {/* Copyright */}
+        {/* --- CAMBIO AQUÍ --- */}
+        {/* Añadido color al borde y quitado el texto erróneo */}
         <div className="mt-8 pt-8 border-t border-primary-light text-center text-xs">
           <p className="text-gray-400">
             © {currentYear} Capital City Volleyball. {dict.footer.rights}
+          </p>
+          <p className="text-gray-400">
+            {dict.footer.created}
           </p>
         </div>
       </div>

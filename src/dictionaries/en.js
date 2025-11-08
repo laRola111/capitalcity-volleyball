@@ -133,5 +133,6 @@ export const dictionary = {
     quickLinks: 'Quick Links',
     contactInfo: 'Contact Info',
     followUs: 'Follow Us',
+    created: "Created by RuedaLaRolaMedia.com"
   },
 }

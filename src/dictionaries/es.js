@@ -132,5 +132,7 @@ export const dictionary = {
     quickLinks: 'Enlaces Rápidos',
     contactInfo: 'Información de Contacto',
     followUs: 'Síguenos',
+    created: "Creado por RuedaLaRolaMedia.com"
+
   },
 }
