@@ -69,6 +69,44 @@ export const dictionary = {
     subtitle: "Join the Capital City Volleyball family today. Register for a program or contact us for more information.",
     button: "Register Now"
   },
+  // ... (después de cta)
+  facilityStats: [
+    { number: "4", label: "Full-Size Courts" },
+    { number: "10+", label: "Certified Coaches" },
+    { number: "1K+", label: "Athletes Trained" },
+    { number: "1", label: "Strength & Conditioning Area" }
+  ],
+  upcomingLeagues: {
+    title: "Join The Action",
+    subtitle: "Registrations for our upcoming leagues and tournaments are now open.",
+    leagues: [
+      {
+        title: "Spring Youth League",
+        subtitle: "Ages 8-16",
+        description: "Registrations now open for our competitive spring season.",
+        imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070&auto=format&fit=crop"
+      },
+      {
+        title: "Adult Co-Ed Tournament",
+        subtitle: "November 30th",
+        description: "Get your team ready for our one-day competitive tournament.",
+        imageUrl: "https://images.unsplash.com/photo-1521537634582-e5fde6b4064B?q=80&w=2070&auto=format&fit=crop"
+      }
+    ]
+  },
+  homeMission: {
+    title: "It's Not Just How You Play,",
+    subtitle: "It's How You Grow.",
+    p1: "We are dedicated to developing every athlete to become a person of character, skill, and confidence.",
+    vision: {
+      title: "Our Vision",
+      description: "To be the premier destination for volleyball development in Central Texas, fostering a love for the game."
+    },
+    mission: {
+      title: "Our Mission",
+      description: "Empower athletes with elite coaching in a positive environment, building leaders on and off the court."
+    }
+  },
   aboutPage: {
     title: "About Capital City Volleyball",
     p1: "Founded in 2023, Capital City Volleyball was born from a passion for the sport and a desire to build a premier training facility for the Pflugerville and North Austin community. We believe volleyball is more than just a game—it's a tool for building character, discipline, and lifelong friendships.",

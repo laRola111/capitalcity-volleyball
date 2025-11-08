@@ -68,6 +68,44 @@ export const dictionary = {
     subtitle: "Únete a la familia de Capital City Volleyball hoy. Regístrate en un programa o contáctanos para más información.",
     button: "Regístrate Ahora"
   },
+  // ... (después de cta)
+  facilityStats: [
+    { number: "4", label: "Canchas Profesionales" },
+    { number: "10+", label: "Entrenadores Certificados" },
+    { number: "1K+", label: "Atletas Entrenados" },
+    { number: "1", label: "Área de Acondicionamiento" }
+  ],
+  upcomingLeagues: {
+    title: "Únete a la Acción",
+    subtitle: "Las inscripciones para nuestras próximas ligas y torneos ya están abiertas.",
+    leagues: [
+      {
+        title: "Liga Juvenil de Primavera",
+        subtitle: "Edades 8-16",
+        description: "Inscripciones abiertas para nuestra competitiva temporada de primavera.",
+        imageUrl: "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070&auto=format&fit=crop"
+      },
+      {
+        title: "Torneo Adulto Mixto",
+        subtitle: "Noviembre 30",
+        description: "Prepara a tu equipo para nuestro torneo competitivo de un día.",
+        imageUrl: "https://images.unsplash.com/photo-1521537634582-e5fde6b4064B?q=80&w=2070&auto=format&fit=crop"
+      }
+    ]
+  },
+  homeMission: {
+    title: "No es Solo Cómo Juegas,",
+    subtitle: "Es Cómo Creces.",
+    p1: "Estamos dedicados a desarrollar a cada atleta para que se convierta en una persona de carácter, habilidad y confianza.",
+    vision: {
+      title: "Nuestra Visión",
+      description: "Ser el destino principal para el desarrollo del voleibol en el centro de Texas, fomentando el amor por el juego."
+    },
+    mission: {
+      title: "Nuestra Misión",
+      description: "Empoderar a los atletas con entrenamiento de élite en un ambiente positivo, formando líderes dentro y fuera de la cancha."
+    }
+  },
   aboutPage: {
     title: "Sobre Capital City Volleyball",
     p1: "Fundado en 2023, Capital City Volleyball nació de la pasión por el deporte y el deseo de construir una instalación de entrenamiento de primer nivel para la comunidad de Pflugerville y el norte de Austin. Creemos que el voleibol es más que un juego: es una herramienta para desarrollar el carácter, la disciplina y amistades para toda la vida.",
