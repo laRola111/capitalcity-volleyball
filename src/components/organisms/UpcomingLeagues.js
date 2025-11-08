@@ -52,7 +52,7 @@ export default function UpcomingLeagues({ lang, dict }) {
                 <h3 className="mt-2 text-2xl font-bold text-primary">{league.title}</h3>
                 <p className="mt-3 text-muted">{league.description}</p>
                 <Link
-                  href={`/${lang}/programs`} // Link genérico por ahora
+                  href={`/${lang}/contact`} // Link genérico por ahora
                   className="inline-flex items-center font-semibold text-accent hover:text-accent-light transition-colors group mt-4"
                 >
                   Register Now
