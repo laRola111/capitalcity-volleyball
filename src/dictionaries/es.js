@@ -173,4 +173,13 @@ export const dictionary = {
     created: "Creado por RuedaLaRolaMedia.com"
 
   },
+  cardPage: {
+    title: "Centro de Entrenamiento para Niños y Adultos",
+    web: "Visitar Sitio Web",
+    call: "Llámanos",
+    whatsapp: "Enviar WhatsApp",
+    email: "Enviar Correo",
+    location: "Ubicación (Google Maps)",
+    social: "Síguenos"
+  }
 }

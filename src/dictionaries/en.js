@@ -173,4 +173,13 @@ export const dictionary = {
     followUs: 'Follow Us',
     created: "Created by RuedaLaRolaMedia.com"
   },
+  cardPage: {
+    title: "Training Facility for Kids & Adults",
+    web: "Visit Website",
+    call: "Call Us",
+    whatsapp: "Send WhatsApp",
+    email: "Send Email",
+    location: "Find Us (Google Maps)",
+    social: "Follow Us"
+  }
 }
