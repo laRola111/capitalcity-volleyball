@@ -5,7 +5,7 @@ import { FaSchool, FaAward, FaUsers } from 'react-icons/fa'; // Iconos de ejempl
 
 // Un array simple de iconos y texto para reemplazar los logos
 const partners = [
-  { name: 'Pflugerville ISD Partner', icon: FaSchool },
+  // { name: 'Pflugerville ISD Partner', icon: FaSchool },
   { name: 'Top Rated Facility', icon: FaAward },
   { name: 'Community Voted', icon: FaUsers },
   { name: 'Austin Sports Affiliate', icon: FaSchool },
@@ -35,7 +35,7 @@ export default function SocialProofSection({ lang, dict }) {
           {dict.socialProof.title}
         </h2>
         <motion.div 
-          className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 lg:mx-0 lg:max-w-none"
+          className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-3 lg:mx-0 lg:max-w-none"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}

@@ -15,8 +15,8 @@ export const dictionary = {
   },
   socialProof: {
     title: "Con la confianza de atletas y padres en todo el centro de Texas",
+    // --- CAMBIO: Eliminado 'Pflugerville ISD' ---
     partners: [
-      { name: 'Pflugerville ISD' },
       { name: 'Austin Sports Center' },
       { name: 'Texas Volleyball League' },
       { name: 'Youth Sports of America' },
@@ -32,16 +32,14 @@ export const dictionary = {
         link: "/es/programs#youth"
       },
       {
-        // --- CAMBIO ---
-        title: "Clínicas de Adolescentes (13-18 Años)",
+        title: "Ligas de Adolescentes (13-18 Años)",
         description: "Juego competitivo diseñado para elevar habilidades y trabajo en equipo.",
         link: "/es/programs#teen"
       },
       {
-        // --- NUEVO ---
-        title: "Clínicas de Adultos (18+)",
-        description: "Mantente activo, conoce gente nueva y pule tus habilidades.",
-        link: "/es/programs#adultClinics"
+        title: "Ligas de Adultos (18+)",
+        description: "Mantente activo, conoce gente nueva y compite en nuestras ligas de adultos.",
+        link: "/es/programs#adult"
       }
     ]
   },
@@ -54,9 +52,9 @@ export const dictionary = {
         role: "Madre"
       },
       {
-        quote: "Excelentes instalaciones y clínicas bien organizadas. Es lo más destacado de mi semana.",
+        quote: "Excelentes instalaciones y ligas bien organizadas. Es lo más destacado de mi semana.",
         author: "Mike R.",
-        role: "Jugador de Clínica de Adultos"
+        role: "Jugador de Liga de Adultos"
       },
       {
         quote: "He aprendido mucho sobre técnica y estrategia. Las sesiones de entrenamiento son duras pero increíblemente gratificantes.",
@@ -70,29 +68,28 @@ export const dictionary = {
     subtitle: "Únete a la familia de Capital City Volleyball hoy. Regístrate en un programa o contáctanos para más información.",
     button: "Regístrate Ahora"
   },
-  // --- CAMBIOS DE STATS ---
   facilityStats: [
-    { number: "2", label: "Canchas Profesionales" },
-    { number: "5+", label: "Entrenadores Certificados" },
-    { number: "25+", label: "Atletas Entrenados" }
+    { number: "4", label: "Canchas Profesionales" },
+    { number: "10+", label: "Entrenadores Certificados" },
+    { number: "1K+", label: "Atletas Entrenados" },
+    { number: "1", label: "Área de Acondicionamiento" }
   ],
   upcomingLeagues: {
     title: "Únete a la Acción",
-    subtitle: "Las inscripciones para nuestros próximos torneos ya están abiertas.",
+    // --- CAMBIO: Subtítulo actualizado ---
+    subtitle: "Las inscripciones para nuestros próximos torneos estarán disponibles.",
     leagues: [
       {
-        // --- CAMBIO ---
-        title: "Torneo de Mujeres",
-        subtitle: "Inscripciones Abiertas",
-        description: "Prepara a tu equipo para nuestro próximo torneo femenino.",
-        imageUrl: "/imgUpcoming-1.png"
+        title: "Liga Juvenil de Primavera",
+        subtitle: "", // <-- CAMBIO: Eliminado
+        description: "Inscripciones abiertas para nuestra competitiva temporada de primavera.",
+        imageUrl: "/imgUpcoming-1.png" // (Aseguré la extensión .png)
       },
       {
-        // --- CAMBIO ---
-        title: "Torneo de Adultos",
-        subtitle: "Inscripciones Abiertas",
-        description: "Compite en nuestro torneo de adultos de alto ritmo.",
-        imageUrl: "/imgUpcoming-2.png"
+        title: "Torneo Adulto Mixto",
+        subtitle: "", // <-- CAMBIO: Eliminado
+        description: "Prepara a tu equipo para nuestro torneo competitivo de un día.",
+        imageUrl: "/imgUpcoming-2.png" // (Aseguré la extensión .png)
       }
     ]
   },
@@ -109,11 +106,13 @@ export const dictionary = {
       description: "Empoderar a los atletas con entrenamiento de élite en un ambiente positivo, formando líderes dentro y fuera de la cancha."
     }
   },
+  gallerySlider: { // <-- Esta sección la añadimos en el paso anterior
+    title: "Nuestra Instalación en Acción"
+  },
   aboutPage: {
     title: "Sobre Capital City Volleyball",
     p1: "Fundado en 2023, Capital City Volleyball nació de la pasión por el deporte y el deseo de construir una instalación de entrenamiento de primer nivel para la comunidad de Pflugerville y el norte de Austin. Creemos que el voleibol es más que un juego: es una herramienta para desarrollar el carácter, la disciplina y amistades para toda la vida.",
-    // --- CAMBIO ---
-    p2: "Nuestras instalaciones de última generación cuentan con múltiples canchas y un equipo de entrenadores profesionales con experiencia a nivel colegial y profesional. Estamos comprometidos a proporcionar un ambiente seguro, positivo y competitivo para atletas de todas las edades y niveles de habilidad.",
+    p2: "Nuestras instalaciones de última generación cuentan con múltiples canchas, áreas dedicadas de entrenamiento de fuerza y un equipo de entrenadores profesionales con experiencia a nivel colegial y profesional. Estamos comprometidos a proporcionar un ambiente seguro, positivo y competitivo para atletas de todas lasedades y niveles de habilidad.",
     missionTitle: "Nuestra Misión",
     missionP: "Empoderar a los atletas para que alcancen su máximo potencial dentro y fuera de la cancha a través de un entrenamiento de alta calidad, refuerzo positivo y una comunidad fuerte.",
   },
@@ -128,32 +127,22 @@ export const dictionary = {
         features: ["Sesiones semanales de 1 hora", "Enfoque en fundamentos", "Baja proporción de jugadores por entrenador", "Ambiente positivo"]
       },
       {
-        // --- CAMBIOS ---
         id: "teen",
-        title: "Academia de Adolescentes (13-18 Años)",
-        description: "Para atletas de secundaria y preparatoria que buscan avanzar en sus habilidades. Nuestra Academia ofrece entrenamiento posicional intensivo para mostrar su talento.",
-        features: ["Entrenamiento posicional", "Fuerza y acondicionamiento", "Orientación de preparación universitaria"]
+        title: "Academia y Ligas de Adolescentes (13-18 Años)",
+        description: "Para atletas de secundaria y preparatoria que buscan avanzar en sus habilidades. Nuestra Academia ofrece entrenamiento posicional intensivo, mientras que nuestras ligas brindan un entorno competitivo para mostrar su talento.",
+        features: ["Entrenamiento posicional", "Fuerza y acondicionamiento", "Ligas competitivas", "Orientación de preparación universitaria"]
       },
       {
-        // --- CAMBIADO (era adult) ---
-        id: "adultLeagues",
+        id: "adult",
         title: "Ligas de Adultos (18+)",
         description: "¿Fuiste jugador o simplemente buscas una forma divertida de mantenerte activo? Nuestras ligas de adultos son para ti. Ofrecemos múltiples divisiones (recreativa, intermedia, competitiva).",
         features: ["Ligas mixtas y de un solo género", "Horarios nocturnos flexibles", "Juegos con árbitro", "Torneo de fin de temporada"]
       },
       {
-        // --- NUEVO ---
-        id: "adultClinics",
-        title: "Clínicas de Adultos (18+)",
-        description: "Clínicas enfocadas para adultos que buscan mejorar habilidades específicas, desde el servicio hasta la colocación.",
-        features: ["Sesiones de habilidades específicas", "Coaching profesional", "Ideal para todos los niveles"]
-      },
-      {
         id: "private",
         title: "Entrenamiento Privado",
         description: "Sesiones individuales o en grupos pequeños con nuestros mejores entrenadores. Recibe retroalimentación personalizada y ejercicios específicos para perfeccionar tu juego.",
-        // --- CAMBIO ---
-        features: ["Atención personalizada", "Planes de ejercicios a medida", "Horarios flexibles"]
+        features: ["Atención personalizada", "Planes de ejercicios a medida", "Análisis de video disponible", "Horarios flexibles"]
       }
     ]
   },
@@ -185,9 +174,6 @@ export const dictionary = {
     contactInfo: 'Información de Contacto',
     followUs: 'Síguenos',
     created: "Creado por RuedaLaRolaMedia.com"
-  },
-  gallerySlider: {
-    title: "Nuestra Instalación en Acción"
   },
   cardPage: {
     title: "Centro de Entrenamiento para Niños y Adultos",

@@ -15,8 +15,8 @@ export const dictionary = {
   },
   socialProof: {
     title: "Trusted by athletes and parents across Central Texas",
+    // --- CAMBIO: Eliminado 'Pflugerville ISD' ---
     partners: [
-      { name: 'Pflugerville ISD' },
       { name: 'Austin Sports Center' },
       { name: 'Texas Volleyball League' },
       { name: 'Youth Sports of America' },
@@ -32,16 +32,14 @@ export const dictionary = {
         link: "/en/programs#youth"
       },
       {
-        // --- CAMBIO ---
-        title: "Teen Clinics (Ages 13-18)",
-        description: "Competitive training designed to elevate skills and teamwork for teens.",
+        title: "Teen Leagues (Ages 13-18)",
+        description: "Competitive play designed to elevate skills and teamwork.",
         link: "/en/programs#teen"
       },
       {
-        // --- NUEVO ---
-        title: "Adult Clinics (18+)",
-        description: "Stay active, meet new people, and sharpen your skills.",
-        link: "/en/programs#adultClinics"
+        title: "Adult Leagues (18+)",
+        description: "Stay active, meet new people, and compete in our friendly adult leagues.",
+        link: "/en/programs#adult"
       }
     ]
   },
@@ -54,9 +52,9 @@ export const dictionary = {
         role: "Parent"
       },
       {
-        quote: "Great facility and well-organized clinics. It's the highlight of my week.",
+        quote: "Great facility and well-organized leagues. It's the highlight of my week.",
         author: "Mike R.",
-        role: "Adult Clinic Player"
+        role: "Adult League Player"
       },
       {
         quote: "I've learned so much about technique and strategy. The training sessions are tough but incredibly rewarding.",
@@ -70,29 +68,28 @@ export const dictionary = {
     subtitle: "Join the Capital City Volleyball family today. Register for a program or contact us for more information.",
     button: "Register Now"
   },
-  // --- CAMBIOS DE STATS ---
   facilityStats: [
-    { number: "2", label: "Full-Size Courts" },
-    { number: "5+", label: "Certified Coaches" },
-    { number: "25+", label: "Athletes Trained" },
+    { number: "4", label: "Full-Size Courts" },
+    { number: "10+", label: "Certified Coaches" },
+    { number: "1K+", label: "Athletes Trained" },
+    { number: "1", label: "Strength & Conditioning Area" }
   ],
   upcomingLeagues: {
     title: "Join The Action",
-    subtitle: "Registrations for our upcoming tournaments are now open.",
+    // --- CAMBIO: Subtítulo actualizado ---
+    subtitle: "Registration for our upcoming Tournaments will be available.",
     leagues: [
       {
-        // --- CAMBIO ---
-        title: "Womens Tournament",
-        subtitle: "Registrations Open",
-        description: "Get your team ready for our upcoming women's tournament.",
-        imageUrl: "/imgUpcoming-1.png"
+        title: "Spring Youth League",
+        subtitle: "", // <-- CAMBIO: Eliminado
+        description: "Registrations now open for our competitive spring season.",
+        imageUrl: "/imgUpcoming-1.png" // (Aseguré la extensión .png)
       },
       {
-        // --- CAMBIO ---
-        title: "Adult Tournament",
-        subtitle: "Registrations Open",
-        description: "Compete in our fast-paced adult tournament.",
-        imageUrl: "/imgUpcoming-2.png"
+        title: "Adult Co-Ed Tournament",
+        subtitle: "", // <-- CAMBIO: Eliminado
+        description: "Get your team ready for our one-day competitive tournament.",
+        imageUrl: "/imgUpcoming-2.png" // (Aseguré la extensión .png)
       }
     ]
   },
@@ -109,11 +106,13 @@ export const dictionary = {
       description: "Empower athletes with elite coaching in a positive environment, building leaders on and off the court."
     }
   },
+  gallerySlider: { // <-- Esta sección la añadimos en el paso anterior
+    title: "Our Facility in Action"
+  },
   aboutPage: {
     title: "About Capital City Volleyball",
     p1: "Founded in 2023, Capital City Volleyball was born from a passion for the sport and a desire to build a premier training facility for the Pflugerville and North Austin community. We believe volleyball is more than just a game—it's a tool for building character, discipline, and lifelong friendships.",
-    // --- CAMBIO ---
-    p2: "Our state-of-the-art facility features multiple courts and a team of professional coaches with collegiate and pro-level experience. We are committed to providing a safe, positive, and competitive environment for athletes of all ages and skill levels.",
+    p2: "Our state-of-the-art facility features multiple courts, dedicated strength training areas, and a team of professional coaches with collegiate and pro-level experience. We are committed to providing a safe, positive, and competitive environment for athletes of all ages and skill levels.",
     missionTitle: "Our Mission",
     missionP: "To empower athletes to achieve their full potential on and off the court through high-quality coaching, positive reinforcement, and a strong community.",
   },
@@ -128,32 +127,22 @@ export const dictionary = {
         features: ["Weekly 1-hour sessions", "Focus on fundamentals", "Low player-to-coach ratio", "Positive environment"]
       },
       {
-        // --- CAMBIOS ---
         id: "teen",
-        title: "Teen Academy (Ages 13-18)",
-        description: "For middle and high school athletes looking to advance their skills. Our Academy offers intensive positional training to showcase their talent.",
-        features: ["Positional training", "Strength & conditioning", "College prep guidance"]
+        title: "Teen Academy & Leagues (Ages 13-18)",
+        description: "For middle and high school athletes looking to advance their skills. Our Academy offers intensive positional training, while our leagues provide a competitive environment to showcase their talent.",
+        features: ["Positional training", "Strength & conditioning", "Competitive leagues", "College prep guidance"]
       },
       {
-        // --- CAMBIADO (era adult) ---
-        id: "adultLeagues",
+        id: "adult",
         title: "Adult Leagues (18+)",
         description: "Whether you're a former player or just looking for a fun way to stay active, our adult leagues are for you. We offer multiple divisions (recreational, intermediate, competitive).",
         features: ["Co-ed and single-gender leagues", "Flexible evening schedules", "Officiated games", "End-of-season tournament"]
       },
       {
-        // --- NUEVO ---
-        id: "adultClinics",
-        title: "Adult Clinics (18+)",
-        description: "Focused clinics for adults looking to improve specific skills, from serving to setting.",
-        features: ["Skill-specific sessions", "Professional coaching", "Great for all levels"]
-      },
-      {
         id: "private",
         title: "Private Training",
         description: "One-on-one or small group sessions with our top coaches. Get personalized feedback and targeted drills to perfect your game.",
-        // --- CAMBIO ---
-        features: ["Personalized attention", "Custom drill plans", "Flexible scheduling"]
+        features: ["Personalized attention", "Custom drill plans", "Video analysis available", "Flexible scheduling"]
       }
     ]
   },
@@ -185,9 +174,6 @@ export const dictionary = {
     contactInfo: 'Contact Info',
     followUs: 'Follow Us',
     created: "Created by RuedaLaRolaMedia.com"
-  },
-  gallerySlider: {
-    title: "Our Facility in Action"
   },
   cardPage: {
     title: "Training Facility for Kids & Adults",
