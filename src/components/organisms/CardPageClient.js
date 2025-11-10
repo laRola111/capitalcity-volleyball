@@ -4,7 +4,7 @@
 import React from 'react'; // React es necesario
 import Image from 'next/image';
 import { FaGlobe, FaPhone, FaWhatsapp, FaEnvelope, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
-import logo from '../../../../public/logo3.png';
+import logo from '../../../public/logo3.png';
 import { motion } from 'framer-motion';
 
 // Información de Contacto del Cliente  
