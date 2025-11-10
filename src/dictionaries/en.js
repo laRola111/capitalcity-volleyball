@@ -15,7 +15,6 @@ export const dictionary = {
   },
   socialProof: {
     title: "Trusted by athletes and parents across Central Texas",
-    // Dejamos esto listo para cuando el cliente nos dé logos
     partners: [
       { name: 'Pflugerville ISD' },
       { name: 'Austin Sports Center' },
@@ -33,14 +32,16 @@ export const dictionary = {
         link: "/en/programs#youth"
       },
       {
-        title: "Teen Leagues (Ages 13-18)",
-        description: "Competitive play designed to elevate skills and teamwork.",
+        // --- CAMBIO ---
+        title: "Teen Clinics (Ages 13-18)",
+        description: "Competitive training designed to elevate skills and teamwork for teens.",
         link: "/en/programs#teen"
       },
       {
-        title: "Adult Leagues (18+)",
-        description: "Stay active, meet new people, and compete in our friendly adult leagues.",
-        link: "/en/programs#adult"
+        // --- NUEVO ---
+        title: "Adult Clinics (18+)",
+        description: "Stay active, meet new people, and sharpen your skills.",
+        link: "/en/programs#adultClinics"
       }
     ]
   },
@@ -53,9 +54,9 @@ export const dictionary = {
         role: "Parent"
       },
       {
-        quote: "Great facility and well-organized leagues. It's the highlight of my week.",
+        quote: "Great facility and well-organized clinics. It's the highlight of my week.",
         author: "Mike R.",
-        role: "Adult League Player"
+        role: "Adult Clinic Player"
       },
       {
         quote: "I've learned so much about technique and strategy. The training sessions are tough but incredibly rewarding.",
@@ -69,27 +70,28 @@ export const dictionary = {
     subtitle: "Join the Capital City Volleyball family today. Register for a program or contact us for more information.",
     button: "Register Now"
   },
-  // ... (después de cta)
+  // --- CAMBIOS DE STATS ---
   facilityStats: [
-    { number: "4", label: "Full-Size Courts" },
-    { number: "10+", label: "Certified Coaches" },
-    { number: "1K+", label: "Athletes Trained" },
-    { number: "1", label: "Strength & Conditioning Area" }
+    { number: "2", label: "Full-Size Courts" },
+    { number: "5+", label: "Certified Coaches" },
+    { number: "25+", label: "Athletes Trained" },
   ],
   upcomingLeagues: {
     title: "Join The Action",
-    subtitle: "Registrations for our upcoming leagues and tournaments are now open.",
+    subtitle: "Registrations for our upcoming tournaments are now open.",
     leagues: [
       {
-        title: "Spring Youth League",
-        subtitle: "Ages 8-16",
-        description: "Registrations now open for our competitive spring season.",
+        // --- CAMBIO ---
+        title: "Womens Tournament",
+        subtitle: "Registrations Open",
+        description: "Get your team ready for our upcoming women's tournament.",
         imageUrl: "/imgUpcoming-1.png"
       },
       {
-        title: "Adult Co-Ed Tournament",
-        subtitle: "November 30th",
-        description: "Get your team ready for our one-day competitive tournament.",
+        // --- CAMBIO ---
+        title: "Adult Tournament",
+        subtitle: "Registrations Open",
+        description: "Compete in our fast-paced adult tournament.",
         imageUrl: "/imgUpcoming-2.png"
       }
     ]
@@ -110,7 +112,8 @@ export const dictionary = {
   aboutPage: {
     title: "About Capital City Volleyball",
     p1: "Founded in 2023, Capital City Volleyball was born from a passion for the sport and a desire to build a premier training facility for the Pflugerville and North Austin community. We believe volleyball is more than just a game—it's a tool for building character, discipline, and lifelong friendships.",
-    p2: "Our state-of-the-art facility features multiple courts, dedicated strength training areas, and a team of professional coaches with collegiate and pro-level experience. We are committed to providing a safe, positive, and competitive environment for athletes of all ages and skill levels.",
+    // --- CAMBIO ---
+    p2: "Our state-of-the-art facility features multiple courts and a team of professional coaches with collegiate and pro-level experience. We are committed to providing a safe, positive, and competitive environment for athletes of all ages and skill levels.",
     missionTitle: "Our Mission",
     missionP: "To empower athletes to achieve their full potential on and off the court through high-quality coaching, positive reinforcement, and a strong community.",
   },
@@ -125,22 +128,32 @@ export const dictionary = {
         features: ["Weekly 1-hour sessions", "Focus on fundamentals", "Low player-to-coach ratio", "Positive environment"]
       },
       {
+        // --- CAMBIOS ---
         id: "teen",
-        title: "Teen Academy & Leagues (Ages 13-18)",
-        description: "For middle and high school athletes looking to advance their skills. Our Academy offers intensive positional training, while our leagues provide a competitive environment to showcase their talent.",
-        features: ["Positional training", "Strength & conditioning", "Competitive leagues", "College prep guidance"]
+        title: "Teen Academy (Ages 13-18)",
+        description: "For middle and high school athletes looking to advance their skills. Our Academy offers intensive positional training to showcase their talent.",
+        features: ["Positional training", "Strength & conditioning", "College prep guidance"]
       },
       {
-        id: "adult",
+        // --- CAMBIADO (era adult) ---
+        id: "adultLeagues",
         title: "Adult Leagues (18+)",
         description: "Whether you're a former player or just looking for a fun way to stay active, our adult leagues are for you. We offer multiple divisions (recreational, intermediate, competitive).",
         features: ["Co-ed and single-gender leagues", "Flexible evening schedules", "Officiated games", "End-of-season tournament"]
       },
       {
+        // --- NUEVO ---
+        id: "adultClinics",
+        title: "Adult Clinics (18+)",
+        description: "Focused clinics for adults looking to improve specific skills, from serving to setting.",
+        features: ["Skill-specific sessions", "Professional coaching", "Great for all levels"]
+      },
+      {
         id: "private",
         title: "Private Training",
         description: "One-on-one or small group sessions with our top coaches. Get personalized feedback and targeted drills to perfect your game.",
-        features: ["Personalized attention", "Custom drill plans", "Video analysis available", "Flexible scheduling"]
+        // --- CAMBIO ---
+        features: ["Personalized attention", "Custom drill plans", "Flexible scheduling"]
       }
     ]
   },

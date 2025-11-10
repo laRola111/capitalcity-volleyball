@@ -2,12 +2,14 @@
 import { getDictionary } from '@/lib/dictionaries';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
-// Info del Cliente (repetida aquí para mostrarla en la página)
+// Info del Cliente
 const contactData = {
   phone: '(512) 803-3936',
-  email: 'dairon92.am@gmail.com',
-  address: '13603 Letti Ln, Pflugerville, TX 78660',
-  googleMapsLink: 'https://www.google.com/maps/search/?api=1&query=$'
+  // --- CAMBIO DE EMAIL ---
+  email: 'capitalcityvolleyball25@yahoo.com',
+  // --- DIRECCIÓN ELIMINADA ---
+  // address: '13603 Letti Ln, Pflugerville, TX 78660',
+  // googleMapsLink: 'http://googleusercontent.com/maps/google.com/0'
 };
 
 export default async function ContactPage({ params: { lang } }) {
@@ -30,7 +32,7 @@ export default async function ContactPage({ params: { lang } }) {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           
-          {/* Formulario (Aún no funcional, necesita Supabase) */}
+          {/* Formulario */}
           <form action="#" method="POST" className="bg-white p-8 rounded-lg shadow-md space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-foreground">{t.form.name}</label>
@@ -65,15 +67,9 @@ export default async function ContactPage({ params: { lang } }) {
           {/* Información de Contacto */}
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold text-primary">{t.info.title}</h2>
-            <div className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
-              <FaMapMarkerAlt className="text-accent text-xl mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-lg font-semibold text-foreground">{t.info.address}</h3>
-                <a href={contactData.googleMapsLink} target="_blank" rel="noopener noreferrer" className="text-muted hover:text-accent transition-colors">
-                  {contactData.address}
-                </a>
-              </div>
-            </div>
+            
+            {/* --- BLOQUE DE DIRECCIÓN ELIMINADO --- */}
+
             <div className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
               <FaPhone className="text-accent text-xl mt-1 flex-shrink-0" />
               <div>

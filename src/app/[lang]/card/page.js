@@ -1,21 +1,23 @@
 // src/app/[lang]/card/page.js
 'use client';
 
-import React from 'react'; // Importamos React
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getDictionary } from '@/lib/dictionaries';
 import { FaGlobe, FaPhone, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
-import logo from '../../../../public/logo3.png'; // Usamos el logo limpio
+import logo from '../../../public/logo3.png';
 import { motion } from 'framer-motion';
 
 // Información de Contacto del Cliente
 const contactData = {
   phone: '512-803-3936',
   phoneHref: '+15128033936',
-  email: 'dairon92.am@gmail.com',
-  address: '13603 Letti Ln, Pflugerville, TX 78660',
-  googleMapsLink: 'https://www.google.com/maps/search/?api=1&query=$',
+  // --- CAMBIO DE EMAIL ---
+  email: 'capitalcityvolleyball25@yahoo.com',
+  // --- DIRECCIÓN ELIMINADA ---
+  // address: '13603 Letti Ln, Pflugerville, TX 78660',
+  // googleMapsLink: 'http://googleusercontent.com/maps/google.com/0',
   social: {
     facebook: '#',
     instagram: '#',
@@ -57,7 +59,6 @@ export default function CardPage({ params: { lang } }) {
 
   return (
     <motion.div 
-      // --- CAMBIOS DE DISEÑO AQUÍ ---
       className="flex flex-col items-center min-h-screen bg-gray-50 text-foreground p-6"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -105,12 +106,7 @@ export default function CardPage({ params: { lang } }) {
             icon={FaEnvelope}
             text={dict.email}
           />
-          <ActionButton
-            href={contactData.googleMapsLink}
-            icon={FaMapMarkerAlt}
-            text={dict.location}
-            target="_blank"
-          />
+          {/* --- BOTÓN DE DIRECCIÓN ELIMINADO --- */}
         </div>
 
         {/* Redes Sociales */}
