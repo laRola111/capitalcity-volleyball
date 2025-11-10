@@ -111,7 +111,9 @@ export const dictionary = {
     }
   },
   gallerySlider: {
-    title: "Nuestra Instalación en Acción"
+    title: "Nuestra Instalación en Acción",
+    subtitle: " Experiencia visual de nuestros mejores momentos.",
+
   },
   aboutPage: {
     title: "Sobre Capital City Volleyball",

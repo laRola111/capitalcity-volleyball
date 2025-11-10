@@ -8,19 +8,19 @@ import Autoplay from 'embla-carousel-autoplay';
 
 const images = [
   "/IMG-20251110-WA0001.jpg",
+  "/imgProgram-1.png",
   "/IMG-20251110-WA0002.jpg",
+  "/imgProgram-2.png",
   "/IMG-20251110-WA0003.jpg",
+  "/imgProgram-3.png",
   "/IMG-20251110-WA0004.jpg",
+  "/imgProgram-4.png",
   "/IMG-20251110-WA0005.jpg",
+  "/imgUpcoming-1.png",
   "/IMG-20251110-WA0006.jpg",
+  "/imgUpcoming-2.png",
   "/IMG-20251110-WA0007.jpg",
   "/IMG-20251110-WA0008.jpg",
-  "/imgProgram-1.png",
-  "/imgProgram-2.png",
-  "/imgProgram-3.png",
-  "/imgProgram-4.png",
-  "/imgUpcoming-1.png",
-  "/imgUpcoming-2.png",
 ];
 
 export default function GallerySlider({ dict }) {
@@ -43,7 +43,7 @@ export default function GallerySlider({ dict }) {
           {dict?.title || "Our Facility in Action"}
         </motion.h2>
         <p className="text-gray-500 text-lg">
-          Experiencia visual de nuestros mejores momentos
+        {dict?.subtitle || "Visual experience of our best moments"}
         </p>
       </div>
 
