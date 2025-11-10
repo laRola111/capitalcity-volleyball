@@ -32,14 +32,16 @@ export const dictionary = {
         link: "/es/programs#youth"
       },
       {
-        title: "Ligas de Adolescentes (13-18 Años)",
+        // --- CAMBIO ---
+        title: "Clínicas de Adolescentes (13-18 Años)",
         description: "Juego competitivo diseñado para elevar habilidades y trabajo en equipo.",
         link: "/es/programs#teen"
       },
       {
-        title: "Ligas de Adultos (18+)",
-        description: "Mantente activo, conoce gente nueva y compite en nuestras ligas de adultos.",
-        link: "/es/programs#adult"
+        // --- NUEVO ---
+        title: "Clínicas de Adultos (18+)",
+        description: "Mantente activo, conoce gente nueva y pule tus habilidades.",
+        link: "/es/programs#adultClinics"
       }
     ]
   },
@@ -52,9 +54,9 @@ export const dictionary = {
         role: "Madre"
       },
       {
-        quote: "Excelentes instalaciones y ligas bien organizadas. Es lo más destacado de mi semana.",
+        quote: "Excelentes instalaciones y clínicas bien organizadas. Es lo más destacado de mi semana.",
         author: "Mike R.",
-        role: "Jugador de Liga de Adultos"
+        role: "Jugador de Clínica de Adultos"
       },
       {
         quote: "He aprendido mucho sobre técnica y estrategia. Las sesiones de entrenamiento son duras pero increíblemente gratificantes.",
@@ -68,11 +70,11 @@ export const dictionary = {
     subtitle: "Únete a la familia de Capital City Volleyball hoy. Regístrate en un programa o contáctanos para más información.",
     button: "Regístrate Ahora"
   },
+  // --- CAMBIOS DE STATS ---
   facilityStats: [
-    { number: "4", label: "Canchas Profesionales" },
-    { number: "10+", label: "Entrenadores Certificados" },
-    { number: "1K+", label: "Atletas Entrenados" },
-    { number: "1", label: "Área de Acondicionamiento" }
+    { number: "2", label: "Canchas Profesionales" },
+    { number: "5+", label: "Entrenadores Certificados" },
+    { number: "25+", label: "Atletas Entrenados" }
   ],
   upcomingLeagues: {
     title: "Únete a la Acción",
@@ -80,16 +82,18 @@ export const dictionary = {
     subtitle: "Las inscripciones para nuestros próximos torneos estarán disponibles.",
     leagues: [
       {
-        title: "Liga Juvenil de Primavera",
-        subtitle: "", // <-- CAMBIO: Eliminado
-        description: "Inscripciones abiertas para nuestra competitiva temporada de primavera.",
-        imageUrl: "/imgUpcoming-1.png" // (Aseguré la extensión .png)
+        // --- CAMBIO ---
+        title: "Torneo de Mujeres",
+        subtitle: "", // Eliminado "Inscripciones Abiertas"
+        description: "Prepara a tu equipo para nuestro próximo torneo femenino.",
+        imageUrl: "/imgUpcoming-1.png"
       },
       {
-        title: "Torneo Adulto Mixto",
-        subtitle: "", // <-- CAMBIO: Eliminado
-        description: "Prepara a tu equipo para nuestro torneo competitivo de un día.",
-        imageUrl: "/imgUpcoming-2.png" // (Aseguré la extensión .png)
+        // --- CAMBIO ---
+        title: "Torneo de Hombres",
+        subtitle: "", // Eliminado "Inscripciones Abiertas"
+        description: "Compite en nuestro torneo de hombres de alto ritmo.",
+        imageUrl: "/imgUpcoming-2.png"
       }
     ]
   },
@@ -106,13 +110,14 @@ export const dictionary = {
       description: "Empoderar a los atletas con entrenamiento de élite en un ambiente positivo, formando líderes dentro y fuera de la cancha."
     }
   },
-  gallerySlider: { // <-- Esta sección la añadimos en el paso anterior
+  gallerySlider: {
     title: "Nuestra Instalación en Acción"
   },
   aboutPage: {
     title: "Sobre Capital City Volleyball",
     p1: "Fundado en 2023, Capital City Volleyball nació de la pasión por el deporte y el deseo de construir una instalación de entrenamiento de primer nivel para la comunidad de Pflugerville y el norte de Austin. Creemos que el voleibol es más que un juego: es una herramienta para desarrollar el carácter, la disciplina y amistades para toda la vida.",
-    p2: "Nuestras instalaciones de última generación cuentan con múltiples canchas, áreas dedicadas de entrenamiento de fuerza y un equipo de entrenadores profesionales con experiencia a nivel colegial y profesional. Estamos comprometidos a proporcionar un ambiente seguro, positivo y competitivo para atletas de todas lasedades y niveles de habilidad.",
+    // --- CAMBIO: Eliminado "áreas dedicadas de entrenamiento de fuerza" ---
+    p2: "Nuestras instalaciones de última generación cuentan con múltiples canchas y un equipo de entrenadores profesionales con experiencia a nivel colegial y profesional. Estamos comprometidos a proporcionar un ambiente seguro, positivo y competitivo para atletas de todas las edades y niveles de habilidad.",
     missionTitle: "Nuestra Misión",
     missionP: "Empoderar a los atletas para que alcancen su máximo potencial dentro y fuera de la cancha a través de un entrenamiento de alta calidad, refuerzo positivo y una comunidad fuerte.",
   },
@@ -127,22 +132,31 @@ export const dictionary = {
         features: ["Sesiones semanales de 1 hora", "Enfoque en fundamentos", "Baja proporción de jugadores por entrenador", "Ambiente positivo"]
       },
       {
+        // --- CAMBIOS ---
         id: "teen",
-        title: "Academia y Ligas de Adolescentes (13-18 Años)",
-        description: "Para atletas de secundaria y preparatoria que buscan avanzar en sus habilidades. Nuestra Academia ofrece entrenamiento posicional intensivo, mientras que nuestras ligas brindan un entorno competitivo para mostrar su talento.",
-        features: ["Entrenamiento posicional", "Fuerza y acondicionamiento", "Ligas competitivas", "Orientación de preparación universitaria"]
+        title: "Academia de Adolescentes (13-18 Años)",
+        description: "Para atletas de secundaria y preparatoria que buscan avanzar en sus habilidades. Nuestra Academia ofrece entrenamiento posicional intensivo para mostrar su talento.",
+        features: ["Entrenamiento posicional", "Fuerza y acondicionamiento", "Orientación de preparación universitaria"]
       },
       {
-        id: "adult",
+        id: "adultLeagues",
         title: "Ligas de Adultos (18+)",
         description: "¿Fuiste jugador o simplemente buscas una forma divertida de mantenerte activo? Nuestras ligas de adultos son para ti. Ofrecemos múltiples divisiones (recreativa, intermedia, competitiva).",
         features: ["Ligas mixtas y de un solo género", "Horarios nocturnos flexibles", "Juegos con árbitro", "Torneo de fin de temporada"]
       },
       {
+         // --- NUEVO ---
+        id: "adultClinics",
+        title: "Clínicas de Adultos (18+)",
+        description: "Clínicas enfocadas para adultos que buscan mejorar habilidades específicas, desde el servicio hasta la colocación.",
+        features: ["Sesiones de habilidades específicas", "Coaching profesional", "Ideal para todos los niveles"]
+      },
+      {
         id: "private",
         title: "Entrenamiento Privado",
         description: "Sesiones individuales o en grupos pequeños con nuestros mejores entrenadores. Recibe retroalimentación personalizada y ejercicios específicos para perfeccionar tu juego.",
-        features: ["Atención personalizada", "Planes de ejercicios a medida", "Análisis de video disponible", "Horarios flexibles"]
+        // --- CAMBIO ---
+        features: ["Atención personalizada", "Planes de ejercicios a medida", "Horarios flexibles"]
       }
     ]
   },
