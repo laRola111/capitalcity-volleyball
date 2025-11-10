@@ -94,9 +94,8 @@ export default function Footer({ lang, dict }) {
            <div className="md:col-span-3 lg:col-span-1 lg:justify-self-end">
              <h3 className="text-base font-semibold text-white mb-4">{dict.footer.followUs}</h3>
              <div className="flex space-x-4">
-               <SocialLink href="#" icon={FaFacebookF} label="Facebook" />
-               <SocialLink href="#" icon={FaInstagram} label="Instagram" />
-               <SocialLink href="#" icon={FaTwitter} label="Twitter" />
+               <SocialLink href="https://www.facebook.com/profile.php?id=61583844713068" icon={FaFacebookF} label="Facebook" />
+               <SocialLink href="https://www.instagram.com/capitalcityvolleyball/#" icon={FaInstagram} label="Instagram" />
              </div>
           </div>
         </div>
