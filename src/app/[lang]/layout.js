@@ -6,6 +6,15 @@ import Footer from '@/components/organisms/Footer';
 // import Footer from '@/components/organisms/Footer'; // Placeholder
 import { getDictionary } from '@/lib/dictionaries';
 
+export async function generateStaticParams() {
+  // Basado en tu archivo middleware.js
+  const languages = ['en', 'es']; 
+  
+  return languages.map((lang) => ({
+    lang: lang,
+  }));
+}
+
 export const metadata = {
   title: 'Capital City Volleyball ',
   description: 'Training Volleyball facility for kids and adults',
