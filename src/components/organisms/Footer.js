@@ -8,7 +8,9 @@ import logo from '../../../public/logo3.png';
 const contactData = {
   phone: '(512) 803-3936',
   // --- CAMBIO DE EMAIL ---
-  email: 'capitalcityvolleyball25@yahoo.com',
+  email: 'infor@capitalcity-volleyball.com',
+  emailTwo: 'capitalcityvolleyball25@yahoo.com',
+
   // --- DIRECCIÓN ELIMINADA ---
   // address: '13603 Letti Ln, Pflugerville, TX 78660',
   // googleMapsLink: 'http://googleusercontent.com/maps/google.com/1'
@@ -82,8 +84,12 @@ export default function Footer({ lang, dict }) {
                    {contactData.email}
                  </a>
                </p>
-               {/* --- BLOQUE DE DIRECCIÓN ELIMINADO --- */}
-             </address>
+                <p className="break-all">
+                 <a href={`mailto:${contactData.emailTwo}`} className=" text-white hover:text-white transition-colors">
+                   {contactData.emailTwo}
+                 </a>
+               </p>
+              </address>
           </div>
 
            {/* Columna 4: Follow Us */}

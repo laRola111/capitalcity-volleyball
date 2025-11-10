@@ -13,10 +13,8 @@ import { motion } from 'framer-motion';
 const contactData = {
   phone: '512-803-3936',
   phoneHref: '+15128033936',
-  // --- CAMBIO DE EMAIL ---
-  email: 'capitalcityvolleyball25@yahoo.com',
-  // --- DIRECCIÓN ELIMINADA ---
-  // address: '13603 Letti Ln, Pflugerville, TX 78660',
+  email: 'infor@capitalcity-volleyball.com',
+  emailTwo: 'capitalcityvolleyball25@yahoo.com',
   // googleMapsLink: 'http://googleusercontent.com/maps/google.com/0',
   social: {
     facebook: '#',
@@ -105,6 +103,11 @@ export default function CardPage({ params: { lang } }) {
             href={`mailto:${contactData.email}`}
             icon={FaEnvelope}
             text={dict.email}
+          />
+            <ActionButton
+            href={`mailto:${contactData.emailTwo}`}
+            icon={FaEnvelope}
+            text={dict.emailTwo}
           />
           {/* --- BOTÓN DE DIRECCIÓN ELIMINADO --- */}
         </div>

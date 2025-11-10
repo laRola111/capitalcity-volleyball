@@ -6,7 +6,8 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 const contactData = {
   phone: '(512) 803-3936',
   // --- CAMBIO DE EMAIL ---
-  email: 'capitalcityvolleyball25@yahoo.com',
+  email: 'infor@capitalcity-volleyball.com',
+  emailTwo: 'capitalcityvolleyball25@yahoo.com',
   // --- DIRECCIÓN ELIMINADA ---
   // address: '13603 Letti Ln, Pflugerville, TX 78660',
   // googleMapsLink: 'http://googleusercontent.com/maps/google.com/0'
@@ -86,9 +87,22 @@ export default async function ContactPage({ params: { lang } }) {
                 <a href={`mailto:${contactData.email}`} className="text-muted hover:text-accent transition-colors">
                   {contactData.email}
                 </a>
+                
               </div>
+              
             </div>
-          </div>
+             <div className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+              <FaEnvelope className="text-accent text-xl mt-1 flex-shrink-0" />
+              <div>
+                <h3 className="text-lg font-semibold text-foreground">{t.info.email}</h3>
+                <a href={`mailto:${contactData.emailTwo}`} className="text-muted hover:text-accent transition-colors">
+                  {contactData.emailTwo}
+                </a>
+                
+              </div>
+              
+            </div>
+          </div>  
         </div>
       </div>
     </div>
