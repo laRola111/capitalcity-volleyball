@@ -9,8 +9,6 @@ const contactData = {
   phone: '(512) 803-3936',
   // --- CAMBIO DE EMAIL ---
   email: 'infor@capitalcity-volleyball.com',
-  emailTwo: 'capitalcityvolleyball25@yahoo.com',
-
   // --- DIRECCIÓN ELIMINADA ---
   // address: '13603 Letti Ln, Pflugerville, TX 78660',
   // googleMapsLink: 'http://googleusercontent.com/maps/google.com/1'

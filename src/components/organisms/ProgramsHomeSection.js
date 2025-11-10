@@ -43,18 +43,20 @@ export default function ProgramsHomeSection({ lang, dict }) {
           </p>
         </motion.div>
 
-        {/* Grid de Programas */}
+        {/* --- CAMBIO EN ESTA LÍNEA --- */}
         <motion.div 
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" // Antes: md:grid-cols-3
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
         >
+        {/* --- FIN DEL CAMBIO --- */}
           {programs.map((program) => (
             <motion.div 
               key={program.title}
               variants={itemVariants}
+              // Hacemos que la tarjeta crezca para mantener simetría
               className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 flex flex-col"
             >
               <h3 className="text-xl font-semibold text-primary mb-3">{program.title}</h3>
@@ -63,7 +65,8 @@ export default function ProgramsHomeSection({ lang, dict }) {
                 href={program.link}
                 className="inline-flex items-center font-semibold text-accent hover:text-accent-light transition-colors group"
               >
-                Learn More
+                {/* Asumo que quieres el texto en inglés, si no, lo pasamos al dict */}
+                Learn More 
                 <FaArrowRight className="ml-2 transition-transform group-hover:translate-x-1" />
               </Link>
             </motion.div>

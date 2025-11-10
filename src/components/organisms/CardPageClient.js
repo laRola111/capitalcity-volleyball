@@ -4,14 +4,14 @@
 import React from 'react'; // React es necesario
 import Image from 'next/image';
 import { FaGlobe, FaPhone, FaWhatsapp, FaEnvelope, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
-import logo from '../../../public/logo3.png';
+import logo from '../../../../public/logo3.png';
 import { motion } from 'framer-motion';
 
-// Información de Contacto del Cliente
+// Información de Contacto del Cliente  
 const contactData = {
   phone: '512-803-3936',
   phoneHref: '+15128033936',
-  email: 'capitalcityvolleyball25@yahoo.com',
+  email: 'infor@capitalcity-volleyball.com',
   social: {
     facebook: '#',
     instagram: '#',
