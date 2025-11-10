@@ -1,7 +1,6 @@
 // src/app/[lang]/page.js
 import { getDictionary } from '@/lib/dictionaries';
 import HeroSection from '@/components/organisms/HeroSection';
-// --- Nuevos Componentes ---
 import SocialProofSection from '@/components/organisms/SocialProofSection';
 import ProgramsHomeSection from '@/components/organisms/ProgramsHomeSection';
 import TestimonialsSection from '@/components/organisms/TestimonialsSection';
@@ -9,6 +8,7 @@ import FacilityStats from '@/components/organisms/FacilityStats';
 import UpcomingLeagues from '@/components/organisms/UpcomingLeagues';
 import HomeMission from '@/components/organisms/HomeMission';
 import CtaSection from '@/components/organisms/CtaSection';
+import GallerySlider from '@/components/organisms/GallerySlider'; // <-- 1. IMPORTAR
 
 export default async function HomePage({ params: { lang } }) {
   const dict = await getDictionary(lang);
@@ -21,6 +21,7 @@ export default async function HomePage({ params: { lang } }) {
       <ProgramsHomeSection lang={lang} dict={dict} />
       <UpcomingLeagues lang={lang} dict={dict} /> 
       <HomeMission lang={lang} dict={dict} /> 
+      <GallerySlider dict={dict.gallerySlider} /> {/* <-- 2. AÑADIR AQUÍ */}
       <TestimonialsSection lang={lang} dict={dict} />
       <CtaSection lang={lang} dict={dict} />
     </>

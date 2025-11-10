@@ -18,3 +18,24 @@ h1, h2, h3, h4, h5, h6 {
 a {
   @apply text-primary hover:text-primary-light; /* Ejemplo de uso de colores */
 }
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  min-width: 0;
+  /* Ancho completo en móvil, con padding */
+  flex: 0 0 100%;
+  padding-left: 1rem; 
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    /* 80% de ancho en desktop para "espiar" el siguiente */
+    flex: 0 0 80%;
+  }
+}

@@ -186,6 +186,9 @@ export const dictionary = {
     followUs: 'Follow Us',
     created: "Created by RuedaLaRolaMedia.com"
   },
+  gallerySlider: {
+    title: "Our Facility in Action"
+  },
   cardPage: {
     title: "Training Facility for Kids & Adults",
     web: "Visit Website",

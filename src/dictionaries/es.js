@@ -186,6 +186,9 @@ export const dictionary = {
     followUs: 'Síguenos',
     created: "Creado por RuedaLaRolaMedia.com"
   },
+  gallerySlider: {
+    title: "Nuestra Instalación en Acción"
+  },
   cardPage: {
     title: "Centro de Entrenamiento para Niños y Adultos",
     web: "Visitar Sitio Web",
