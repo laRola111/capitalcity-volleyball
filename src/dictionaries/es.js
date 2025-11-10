@@ -32,13 +32,13 @@ export const dictionary = {
         link: "/es/programs#youth"
       },
       {
-        // --- CAMBIO ---
+        // --- CAMBIO: "Teen Leagues" -> "Teen Clinics" ---
         title: "Clínicas de Adolescentes (13-18 Años)",
         description: "Juego competitivo diseñado para elevar habilidades y trabajo en equipo.",
         link: "/es/programs#teen"
       },
       {
-        // --- NUEVO ---
+        // --- NUEVO: "Adult Clinics" ---
         title: "Clínicas de Adultos (18+)",
         description: "Mantente activo, conoce gente nueva y pule tus habilidades.",
         link: "/es/programs#adultClinics"
@@ -139,12 +139,6 @@ export const dictionary = {
         features: ["Entrenamiento posicional", "Fuerza y acondicionamiento", "Orientación de preparación universitaria"]
       },
       {
-        id: "adultLeagues",
-        title: "Ligas de Adultos (18+)",
-        description: "¿Fuiste jugador o simplemente buscas una forma divertida de mantenerte activo? Nuestras ligas de adultos son para ti. Ofrecemos múltiples divisiones (recreativa, intermedia, competitiva).",
-        features: ["Ligas mixtas y de un solo género", "Horarios nocturnos flexibles", "Juegos con árbitro", "Torneo de fin de temporada"]
-      },
-      {
          // --- NUEVO ---
         id: "adultClinics",
         title: "Clínicas de Adultos (18+)",
@@ -158,6 +152,7 @@ export const dictionary = {
         // --- CAMBIO ---
         features: ["Atención personalizada", "Planes de ejercicios a medida", "Horarios flexibles"]
       }
+      // Nota: Eliminé la sección "Adult Leagues" que estaba aquí pero no en la lista del cliente.
     ]
   },
   contactPage: {

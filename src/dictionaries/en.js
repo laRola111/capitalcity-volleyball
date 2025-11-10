@@ -32,16 +32,16 @@ export const dictionary = {
         link: "/en/programs#youth"
       },
       {
-        // --- CAMBIO ---
+        // --- CAMBIO: "Teen Leagues" -> "Teen Clinics" ---
         title: "Teen Clinics (Ages 13-18)",
         description: "Competitive training designed to elevate skills and teamwork for teens.",
         link: "/en/programs#teen"
       },
       {
-        // --- NUEVO ---
+        // --- NUEVO: "Adult Clinics" ---
         title: "Adult Clinics (18+)",
         description: "Stay active, meet new people, and sharpen your skills.",
-        link: "/en/programs#adultClinics"
+        link: "/en/programs#adultClinics" // (ID nuevo)
       }
     ]
   },
@@ -139,12 +139,6 @@ export const dictionary = {
         features: ["Positional training", "Strength & conditioning", "College prep guidance"]
       },
       {
-        id: "adultLeagues",
-        title: "Adult Leagues (18+)",
-        description: "Whether you're a former player or just looking for a fun way to stay active, our adult leagues are for you. We offer multiple divisions (recreational, intermediate, competitive).",
-        features: ["Co-ed and single-gender leagues", "Flexible evening schedules", "Officiated games", "End-of-season tournament"]
-      },
-      {
         // --- NUEVO ---
         id: "adultClinics",
         title: "Adult Clinics (18+)",
@@ -158,6 +152,7 @@ export const dictionary = {
         // --- CAMBIO ---
         features: ["Personalized attention", "Custom drill plans", "Flexible scheduling"]
       }
+      // Nota: Eliminé la sección "Adult Leagues" que estaba aquí pero no en la lista del cliente.
     ]
   },
   contactPage: {
