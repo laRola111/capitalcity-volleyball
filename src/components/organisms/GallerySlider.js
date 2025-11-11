@@ -82,6 +82,7 @@ export default function GallerySlider({ dict }) {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   style={{ objectFit: 'contain' }}
                   className="transition-transform duration-700 hover:scale-105"
+                  loading="lazy"
                 />
               </div>
             </motion.div>

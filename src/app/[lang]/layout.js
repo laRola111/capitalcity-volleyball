@@ -6,6 +6,18 @@ import Footer from '@/components/organisms/Footer';
 // import Footer from '@/components/organisms/Footer'; // Placeholder
 import { getDictionary } from '@/lib/dictionaries';
 
+const openSans = openSans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-open-sans', // Variable CSS para Tailwind
+});
+
+const lora = lora({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-lora', // Variable CSS para Tailwind
+});
+
 export async function generateStaticParams() {
   // Basado en tu archivo middleware.js
   const languages = ['en', 'es']; 
@@ -24,7 +36,7 @@ export default async function LangLayout({ children, params: { lang } }) {
   const dict = await getDictionary(lang);
 
   return (
-    <html lang={lang} >
+   <html lang={lang} className={`${openSans.variable} ${lora.variable}`}>
       <body className="flex flex-col min-h-screen bg-background text-foreground">
         <Header lang={lang} dict={dict.navbar} />
         <main className="grow">

@@ -1,14 +1,19 @@
 // src/app/[lang]/page.js
 import { getDictionary } from '@/lib/dictionaries';
+import dynamic from 'next/dynamic'; // <-- 1. Importar dynamic
+
+// 2. Mantener HeroSection estático (se ve primero)
 import HeroSection from '@/components/organisms/HeroSection';
-import SocialProofSection from '@/components/organisms/SocialProofSection';
-import ProgramsHomeSection from '@/components/organisms/ProgramsHomeSection';
-import TestimonialsSection from '@/components/organisms/TestimonialsSection';
-import FacilityStats from '@/components/organisms/FacilityStats';
-import UpcomingLeagues from '@/components/organisms/UpcomingLeagues';
-import HomeMission from '@/components/organisms/HomeMission';
-import CtaSection from '@/components/organisms/CtaSection';
-import GallerySlider from '@/components/organisms/GallerySlider'; // <-- 1. IMPORTAR
+
+// 3. Cargar el resto dinámicamente
+const FacilityStats = dynamic(() => import('@/components/organisms/FacilityStats'));
+const SocialProofSection = dynamic(() => import('@/components/organisms/SocialProofSection'));
+const ProgramsHomeSection = dynamic(() => import('@/components/organisms/ProgramsHomeSection'));
+const UpcomingLeagues = dynamic(() => import('@/components/organisms/UpcomingLeagues'));
+const HomeMission = dynamic(() => import('@/components/organisms/HomeMission'));
+const GallerySlider = dynamic(() => import('@/components/organisms/GallerySlider'));
+const TestimonialsSection = dynamic(() => import('@/components/organisms/TestimonialsSection'));
+const CtaSection = dynamic(() => import('@/components/organisms/CtaSection'));
 
 export default async function HomePage({ params: { lang } }) {
   const dict = await getDictionary(lang);
@@ -21,9 +26,9 @@ export default async function HomePage({ params: { lang } }) {
       <ProgramsHomeSection lang={lang} dict={dict} />
       <UpcomingLeagues lang={lang} dict={dict} /> 
       <HomeMission lang={lang} dict={dict} /> 
-      <GallerySlider dict={dict.gallerySlider} /> {/* <-- 2. AÑADIR AQUÍ */}
+      <GallerySlider dict={dict.gallerySlider} />
       <TestimonialsSection lang={lang} dict={dict} />
       <CtaSection lang={lang} dict={dict} />
     </>
   );
-}
+} 
