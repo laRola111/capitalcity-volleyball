@@ -27,7 +27,7 @@ export async function sendEmail(formData) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Capital City Website <onboarding@resend.dev>', // Resend requiere un dominio verificado o este default
+      from: 'Contacto Web <web@capitalcity-volleyball.com>',
       to: [toEmail],
       subject: `Nuevo Mensaje de Contacto: ${subject}`,
       html: `
