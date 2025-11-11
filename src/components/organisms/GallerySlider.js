@@ -7,18 +7,28 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 const images = [
+  "/IMG-20251111-WA0004.jpg",
   "/IMG-20251110-WA0001.jpg",
+  "/IMG-20251111-WA0005.jpg",
   "/imgProgram-1.png",
+  "/IMG-20251111-WA0006.jpg",
   "/IMG-20251110-WA0002.jpg",
+  "/IMG-20251111-WA0007.jpg",
   "/imgProgram-2.png",
+  "/IMG-20251111-WA0008.jpg",
   "/IMG-20251110-WA0003.jpg",
+  "/IMG-20251111-WA0009.jpg",
   "/imgProgram-3.png",
+  "/IMG-20251111-WA0010.jpg",
   "/IMG-20251110-WA0004.jpg",
   "/imgProgram-4.png",
+  "/IMG-20251111-WA0011.jpg",
   "/IMG-20251110-WA0005.jpg",
   "/imgUpcoming-1.png",
+  "/IMG-20251111-WA0012.jpg",
   "/IMG-20251110-WA0006.jpg",
   "/imgUpcoming-2.png",
+  "/IMG-20251111-WA0013.jpg",
   "/IMG-20251110-WA0007.jpg",
   "/IMG-20251110-WA0008.jpg",
 ];
