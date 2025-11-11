@@ -32,8 +32,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-open-sans)', ...defaultTheme.fontFamily.sans],
-        serif: ['var(--font-lora)', ...defaultTheme.fontFamily.serif],
+        sans: ['"Open Sans"', ...defaultTheme.fontFamily.sans],
+        serif: ['Lora', ...defaultTheme.fontFamily.serif], // Podemos mantener Lora para títulos si te gusta el contraste
       },
       backgroundImage: {
          // Limpiamos el patrón anterior
