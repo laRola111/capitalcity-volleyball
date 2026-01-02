@@ -28,7 +28,7 @@ export default function FeatureSection({ dict }) {
 
           {/* Columna de Imagen (Derecha) */}
           <motion.div
-            className="relative h-[650px] w-full rounded-2xl overflow-hidden shadow-xl"
+            className="relative h-[600px] w-full rounded-2xl overflow-hidden shadow-xl"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -38,7 +38,7 @@ export default function FeatureSection({ dict }) {
               src="/home-feature..jpeg" // La imagen que renombramos
               alt={dict.imageAlt}
               fill
-              className="object-fill hover:scale-105 transition-transform duration-700"
+              className="object-cover hover:scale-105 transition-transform duration-700"
             />
           </motion.div>
 
