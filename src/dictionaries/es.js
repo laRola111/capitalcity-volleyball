@@ -22,6 +22,12 @@ export const dictionary = {
       { name: 'Youth Sports of America' },
     ]
   },
+  featureSection: {
+    title: "Experimenta la Diferencia",
+    subtitle: "Nuestras instalaciones están diseñadas para sacar lo mejor de cada atleta.",
+    description: "Únete a una comunidad apasionada por el voleibol. Ya sea que estés comenzando tu camino o busques competir a un alto nivel, brindamos el entorno que necesitas para triunfar.",
+    imageAlt: "Acción en Capital City Volleyball",
+},
   programsHome: {
     title: "Programas Para Todas las Edades",
     subtitle: "Desde fundamentos hasta entrenamiento de élite, tenemos un programa para cada atleta.",

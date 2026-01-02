@@ -9,6 +9,7 @@
   import HomeMission from '@/components/organisms/HomeMission';
   import CtaSection from '@/components/organisms/CtaSection';
   import GallerySlider from '@/components/organisms/GallerySlider'; // <-- 1. IMPORTAR
+  import FeatureSection from '@/components/organisms/FeatureSection'; // <-- 2. IMPORTAR
 
   export default async function HomePage({ params: { lang } }) {
     const dict = await getDictionary(lang);
@@ -16,6 +17,7 @@
     return (
       <>
         <HeroSection lang={lang} dict={dict.hero} />
+        <FeatureSection dict={dict.featureSection} />
         <FacilityStats lang={lang} dict={dict} />
         <SocialProofSection lang={lang} dict={dict} />
         <ProgramsHomeSection lang={lang} dict={dict} />

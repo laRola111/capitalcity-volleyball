@@ -27,6 +27,35 @@ export default async function ProgramsPage({ params: { lang } }) {
             {t.intro}
           </p>
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+            {/* Foto 1 */}
+<div className="relative w-full h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">                <Image 
+                    src="/foto1.jpeg" 
+                    alt="Volleyball Service 1" 
+                    fill 
+                    className="object-cover hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                />
+            </div>
+            {/* Foto 2 */}
+<div className="relative w-full h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">                <Image 
+                    src="/foto2.jpeg" 
+                    alt="Volleyball Service 1" 
+                    fill 
+                    className="object-cover hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                />
+            </div>
+            {/* Foto 3 */}
+<div className="relative w-full h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">                <Image 
+                    src="/foto3.jpeg" 
+                    alt="Volleyball Service 1" 
+                    fill 
+                    className="object-cover hover:scale-105 transition-transform duration-700"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                />
+            </div>
+        </div>
 
         {/* Lista de Programas */}
         <div className="space-y-16">

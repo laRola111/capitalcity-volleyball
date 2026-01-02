@@ -22,6 +22,12 @@ export const dictionary = {
       { name: 'Youth Sports of America' },
     ]
   },
+  featureSection: {
+    title: "Experience the Difference",
+    subtitle: "Our facility is designed to bring out the best in every athlete.",
+    description: "Join a community passionate about volleyball. Whether you are starting your journey or looking to compete at a high level, we provide the environment you need to succeed.",
+    imageAlt: "Capital City Volleyball Action",
+  },
   programsHome: {
     title: "Programs For All Ages",
     subtitle: "From fundamentals to elite training, we have a program for every athlete.",
