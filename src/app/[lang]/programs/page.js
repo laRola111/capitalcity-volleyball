@@ -7,7 +7,7 @@ const placeholderImages = [
   "/imgProgram-1.png",
   "/imgProgram-2.png",
   "/imgProgram-3.png",
-  "/imgProgram-4.png"
+  "/foto2.jpeg"
 ];
 
 export default async function ProgramsPage({ params: { lang } }) {
@@ -38,14 +38,14 @@ export default async function ProgramsPage({ params: { lang } }) {
                 />
             </div>
             {/* Foto 2 */}
-<div className="relative w-full h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">                <Image 
+{/* <div className="relative w-full h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">                <Image 
                     src="/foto2.jpeg" 
                     alt="Volleyball Service 1" 
                     fill 
                     className="object-cover hover:scale-105 transition-transform duration-700"
                     sizes="(max-width: 768px) 100vw, 33vw"
                 />
-            </div>
+            </div> */}
             {/* Foto 3 */}
 <div className="relative w-full h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl">                <Image 
                     src="/foto3.jpeg" 
@@ -66,7 +66,7 @@ export default async function ProgramsPage({ params: { lang } }) {
               className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center scroll-mt-24"
             >
               {/* Imagen (alternando lados) */}
-              <div className={`relative h-96 w-full rounded-lg overflow-hidden shadow-xl ${index % 2 === 1 ? 'lg:order-last' : ''}`}>
+              <div className={`relative w-full h-[500px] md:h-[600px] rounded-xl overflow-hidden shadow-2xl ${index % 2 === 1 ? 'lg:order-last' : ''}`}>
                 <Image
                   src={placeholderImages[index % placeholderImages.length]}
                   alt={`${section.title} volleyball program`}
