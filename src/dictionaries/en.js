@@ -5,6 +5,7 @@ export const dictionary = {
     about: 'About Us',
     programs: 'Programs',
     gallery: 'Gallery',
+    merch: 'Merch',
     contact: 'Contact',
   },
   hero: {
@@ -88,18 +89,16 @@ export const dictionary = {
     subtitle: "Registration for our upcoming Tournaments will be available.",
     leagues: [
       {
-        // --- CAMBIO ---
         title: "Womens Tournament",
-        subtitle: "", // Eliminado "Registrations Open"
+        subtitle: "",
         description: "Get your team ready for our upcoming women's tournament.",
-        imageUrl: "/foto1.jpeg"
+        imageUrl: "/tornament-woman-capital.jpeg"
       },
       {
-        // --- CAMBIO ---
         title: "Mens Tournament",
-        subtitle: "", // Eliminado "Registrations Open"
+        subtitle: "",
         description: "Compete in our fast-paced men's tournament.",
-        imageUrl: "/foto3.jpeg"
+        imageUrl: "/tornamente-mens-capital.jpeg"
       }
     ]
   },
@@ -110,10 +109,6 @@ export const dictionary = {
     vision: {
       title: "Our Vision",
       description: "Our vision is to elevate volleyball by developing disciplined athletes, transforming competition, and building a respected performance-driven community nationwide."
-    },
-    mission: {
-      title: "Our Mission",
-      description: "To develop athletes through elite training, competitive opportunities, and disciplined coaching while delivering a fair, athlete-first volleyball experience."
     }
   },
   gallerySlider: {
@@ -123,7 +118,6 @@ export const dictionary = {
   aboutPage: {
     title: "About Capital City Volleyball",
     p1: "Capital City Volleyball is a performance-driven organization dedicated to developing athletes through elite training, structured coaching, and high-level competition. Our approach combines skill development, strength and conditioning, and game intelligence to create well-rounded players who can compete with confidence and discipline. Every session and event is designed with intention—focused on maximizing growth, refining technique, and pushing athletes beyond their limits.",
-    // --- CAMBIO: Eliminado "Dedicated strength training areas" ---
     p2: "We are committed to delivering an athlete-first experience that prioritizes fairness, opportunity, and long-term development. From private lessons and group training to competitive tournaments, Capital City Volleyball is redefining the standard by building a culture of accountability, consistency, and excellence. Our mission is to not only improve performance, but to shape disciplined competitors prepared to succeed both on and off the court.",
   },
   programsPage: {
@@ -154,7 +148,6 @@ export const dictionary = {
         id: "private",
         title: "Private Training",
         description: "Private training delivers personalized coaching to refine technique, build consistency, and elevate performance through focused repetition, feedback, and structured development sessions.",
-        // --- CAMBIO ---
         features: ["Personalized attention", "Custom drill plans", "Flexible scheduling"]
       }
       // Nota: Eliminé la sección "Adult Leagues" que estaba aquí pero no en la lista del cliente.
@@ -197,5 +190,41 @@ export const dictionary = {
     email: "Send Email",
     location: "Find Us (Google Maps)",
     social: "Follow Us"
+  },
+  merchPreview: {
+    badge: "Official Gear",
+    title: "Rep Capital City Volleyball",
+    subtitle: "Show your pride with official Capital City gear. Available in White, Black, and Navy.",
+    shirt: "Shirts",
+    hoodie: "Hoodies",
+    hat: "Hats",
+    colors: "Colors available: White • Black • Navy",
+    cta: "Order Now",
+  },
+  merchPage: {
+    title: "Capital City Volleyball Merch",
+    subtitle: "Show your Capital City pride! Order your official gear below. Available in White, Black, and Navy.",
+    products: [
+      { id: "shirt", name: "Shirts", price: "$25", emoji: "👕" },
+      { id: "hoodie", name: "Hoodies", price: "$45", emoji: "🧥" },
+      { id: "hat", name: "Hats", price: "$20", emoji: "🧢" },
+    ],
+    colors: ["White", "Black", "Navy"],
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    orderTitle: "Place Your Order",
+    orderSubtitle: "Fill out the form below and we will confirm your order via Email or WhatsApp.",
+    form: {
+      name: "Your Name",
+      phone: "WhatsApp / Phone Number",
+      email: "Email Address",
+      product: "Select Item",
+      color: "Select Color",
+      size: "Select Size",
+      quantity: "Quantity",
+      notes: "Special Notes (Optional)",
+      submit: "Send Order",
+      success: "✅ Order sent! We will contact you shortly to confirm.",
+      error: "Something went wrong. Please try WhatsApp directly."
+    }
   }
 }

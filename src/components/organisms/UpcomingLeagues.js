@@ -38,13 +38,14 @@ export default function UpcomingLeagues({ lang, dict }) {
               transition={{ duration: 0.7, ease: "easeOut" }}
               className="bg-white rounded-lg shadow-xl overflow-hidden group"
             >
-              <div className="relative h-64 w-full">
+              {/* Caja con aspect ratio 3:2 igual que las fotos — sin recorte */}
+              <div className="relative w-full" style={{ aspectRatio: '3/2' }}>
                 <Image
                   src={league.imageUrl}
                   alt={league.title}
                   fill
-                  style={{ objectFit: 'cover' }}
-                  className="transition-transform duration-500 group-hover:scale-105"
+                  style={{ objectFit: 'contain', objectPosition: 'center' }}
+                  className="transition-transform duration-500 group-hover:scale-105 bg-black"
                 />
               </div>
               <div className="p-6">

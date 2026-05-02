@@ -41,6 +41,7 @@ export default function Header({ lang, dict }) {
     { name: dict.navbar?.about || 'About Us', href: `/${lang}/about` },
     { name: dict.navbar?.programs || 'Programs', href: `/${lang}/programs` },
     { name: dict.navbar?.gallery || 'Gallery', href: `/${lang}/gallery` },
+    { name: dict.navbar?.merch || 'Merch', href: `/${lang}/merch` },
     { name: dict.navbar?.contact || 'Contact', href: `/${lang}/contact` },
   ] : [];
 

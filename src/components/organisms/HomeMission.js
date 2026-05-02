@@ -2,7 +2,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { FaEye, FaBullseye } from 'react-icons/fa'; // Iconos para Misión/Visión
+import { FaEye } from 'react-icons/fa'; // Icono para Visión
 // import img from "../../../public/missionI.png"
 
 export default function HomeMission({ lang, dict }) {
@@ -60,18 +60,6 @@ export default function HomeMission({ lang, dict }) {
                 </div>
               </div>
               
-              {/* Mission */}
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
-                    <FaBullseye className="h-6 w-6" />
-                  </div>
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-primary">{t.mission.title}</h3>
-                  <p className="mt-2 text-muted">{t.mission.description}</p>
-                </div>
-              </div>
             </div>
           </motion.div>
         </div>

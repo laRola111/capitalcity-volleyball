@@ -5,6 +5,7 @@ export const dictionary = {
     about: 'Nosotros',
     programs: 'Programas',
     gallery: 'Galería',
+    merch: 'Tienda',
     contact: 'Contacto',
   },
   hero: {
@@ -88,18 +89,16 @@ export const dictionary = {
     subtitle: "Las inscripciones para nuestros próximos torneos estarán disponibles.",
     leagues: [
       {
-        // --- CAMBIO ---
         title: "Torneo de Mujeres",
-        subtitle: "", // Eliminado "Inscripciones Abiertas"
+        subtitle: "",
         description: "Prepara a tu equipo para nuestro próximo torneo femenino.",
-        imageUrl: "/foto1.jpeg"
+        imageUrl: "/tornament-woman-capital.jpeg"
       },
       {
-        // --- CAMBIO ---
         title: "Torneo de Hombres",
-        subtitle: "", // Eliminado "Inscripciones Abiertas"
+        subtitle: "",
         description: "Compite en nuestro torneo de hombres de alto ritmo.",
-        imageUrl: "/foto3.jpeg"
+        imageUrl: "/tornamente-mens-capital.jpeg"
       }
     ]
   },
@@ -110,10 +109,6 @@ export const dictionary = {
     vision: {
       title: "Nuestra Visión",
       description: "Nuestra visión es elevar el voleibol desarrollando atletas disciplinados, transformando la competencia y construyendo una comunidad respetada y enfocada en el rendimiento a nivel nacional."
-    },
-    mission: {
-      title: "Nuestra Misión",
-      description: "Desarrollar atletas a través del entrenamiento de élite, oportunidades competitivas y entrenamiento disciplinado mientras brindamos una experiencia de voleibol justa y enfocada en el atleta."
     }
   },
   gallerySlider: {
@@ -198,5 +193,41 @@ export const dictionary = {
     email: "Enviar Correo",
     location: "Ubicación (Google Maps)",
     social: "Síguenos"
+  },
+  merchPreview: {
+    badge: "Ropa Oficial",
+    title: "Representa a Capital City Volleyball",
+    subtitle: "Muestra tu orgullo con ropa oficial de Capital City. Disponible en Blanco, Negro y Azul Marino.",
+    shirt: "Camisas",
+    hoodie: "Sudaderas",
+    hat: "Gorras",
+    colors: "Colores disponibles: Blanco • Negro • Azul Marino",
+    cta: "Ordenar Ahora",
+  },
+  merchPage: {
+    title: "Tienda Capital City Volleyball",
+    subtitle: "¡Muestra tu orgullo Capital City! Ordena tu ropa oficial abajo. Disponible en Blanco, Negro y Azul Marino.",
+    products: [
+      { id: "shirt", name: "Camisas", price: "$25", emoji: "👕" },
+      { id: "hoodie", name: "Sudaderas", price: "$45", emoji: "🧥" },
+      { id: "hat", name: "Gorras", price: "$20", emoji: "🧢" },
+    ],
+    colors: ["Blanco", "Negro", "Azul Marino"],
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    orderTitle: "Haz Tu Pedido",
+    orderSubtitle: "Llena el formulario y te confirmaremos tu pedido por correo o WhatsApp.",
+    form: {
+      name: "Tu Nombre",
+      phone: "WhatsApp / Teléfono",
+      email: "Correo Electrónico",
+      product: "Seleccionar Artículo",
+      color: "Seleccionar Color",
+      size: "Seleccionar Talla",
+      quantity: "Cantidad",
+      notes: "Notas Especiales (Opcional)",
+      submit: "Enviar Pedido",
+      success: "✅ ¡Pedido enviado! Te contactaremos pronto para confirmar.",
+      error: "Algo salió mal. Por favor contáctanos por WhatsApp."
+    }
   }
 }

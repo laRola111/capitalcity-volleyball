@@ -4,34 +4,38 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-// Usamos la imagen que nos diste
-import heroImage from "../../../public/imageHerocopia.webp"; 
 
 export default function HeroSection({ lang, dict }) {
-  const menuLink = `/${lang}/programs`; // Enlace actualizado a Programas
+  const menuLink = `/${lang}/programs`;
 
   return (
-    <section id="hero" className="relative w-full h-[70vh] min-h-[500px] md:h-[80vh] flex items-center bg-primary">
-      {/* Imagen de Fondo */}
+    // Ratio exacto de homepage-capital.png: 3168x1344 ≈ 2.36:1
+    <section
+      id="hero"
+      className="relative w-full flex items-center justify-center bg-primary"
+      style={{ aspectRatio: '3168/1344', maxHeight: '88vh' }}
+    >
+      {/* Imagen de Fondo — servida desde public/ sin import estático */}
       <Image
-        src={heroImage} // Imagen del cliente
+        src="/homepage-capital.png"
         alt={dict.imageAlt}
         fill
-        style={{ objectFit: 'cover' }}
+        style={{ objectFit: 'contain', objectPosition: 'center center' }}
         priority
-        quality={85}
+        quality={90}
+        sizes="100vw"
       />
-      
-      {/* Degradado Oscuro a la Izquierda */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/70 to-transparent" />
 
-      {/* Contenido de Texto (Izquierda) */}
+      {/* Degradado izquierda */}
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/50 to-transparent" />
+
+      {/* Texto */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-xl">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
             className="text-left"
           >
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
@@ -49,8 +53,6 @@ export default function HeroSection({ lang, dict }) {
           </motion.div>
         </div>
       </div>
-      
-      {/* La parte derecha queda vacía para mostrar a la jugadora */}
     </section>
   );
 }
