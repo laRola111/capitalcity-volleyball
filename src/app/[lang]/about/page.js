@@ -23,8 +23,7 @@ export default async function AboutPage({ params: { lang } }) {
               {t.p2}
             </p>
 
-            <h2 className="text-2xl font-semibold text-primary mb-3">{t.missionTitle}</h2>
-            <p className="text-lg text-muted">{t.missionP}</p>
+
           </div>
 
           {/* Columna de Imagen */}

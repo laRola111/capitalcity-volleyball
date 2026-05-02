@@ -9,7 +9,7 @@ export const dictionary = {
   },
   hero: {
     title: "Capital City Volleyball",
-    subtitle: "Centro de entrenamiento de voleibol para niños y adultos en Pflugerville, TX. Construyendo confianza y habilidad dentro y fuera de la cancha.",
+    subtitle: "Capital City Volleyball desarrolla atletas a través del entrenamiento de élite, el juego competitivo y el entrenamiento personalizado, formando competidores disciplinados comprometidos con el crecimiento y la excelencia en el rendimiento.",
     button: "Ver Programas",
     imageAlt: "Jugadora de Capital City Volleyball sirviendo una pelota",
   },
@@ -92,14 +92,14 @@ export const dictionary = {
         title: "Torneo de Mujeres",
         subtitle: "", // Eliminado "Inscripciones Abiertas"
         description: "Prepara a tu equipo para nuestro próximo torneo femenino.",
-        imageUrl: "/imgUpcoming-1.png"
+        imageUrl: "/foto1.jpeg"
       },
       {
         // --- CAMBIO ---
         title: "Torneo de Hombres",
         subtitle: "", // Eliminado "Inscripciones Abiertas"
         description: "Compite en nuestro torneo de hombres de alto ritmo.",
-        imageUrl: "/imgUpcoming-2.png"
+        imageUrl: "/foto3.jpeg"
       }
     ]
   },
@@ -109,11 +109,11 @@ export const dictionary = {
     p1: "Estamos dedicados a desarrollar a cada atleta para que se convierta en una persona de carácter, habilidad y confianza.",
     vision: {
       title: "Nuestra Visión",
-      description: "Ser el destino principal para el desarrollo del voleibol en el centro de Texas, fomentando el amor por el juego."
+      description: "Nuestra visión es elevar el voleibol desarrollando atletas disciplinados, transformando la competencia y construyendo una comunidad respetada y enfocada en el rendimiento a nivel nacional."
     },
     mission: {
       title: "Nuestra Misión",
-      description: "Empoderar a los atletas con entrenamiento de élite en un ambiente positivo, formando líderes dentro y fuera de la cancha."
+      description: "Desarrollar atletas a través del entrenamiento de élite, oportunidades competitivas y entrenamiento disciplinado mientras brindamos una experiencia de voleibol justa y enfocada en el atleta."
     }
   },
   gallerySlider: {
@@ -123,11 +123,9 @@ export const dictionary = {
   },
   aboutPage: {
     title: "Sobre Capital City Volleyball",
-    p1: "Fundado en 2023, Capital City Volleyball nació de la pasión por el deporte y el deseo de construir una instalación de entrenamiento de primer nivel para la comunidad de Pflugerville y el norte de Austin. Creemos que el voleibol es más que un juego: es una herramienta para desarrollar el carácter, la disciplina y amistades para toda la vida.",
+    p1: "Capital City Volleyball es una organización enfocada en el rendimiento, dedicada a desarrollar atletas a través del entrenamiento de élite, coaching estructurado y competencia de alto nivel. Nuestro enfoque combina el desarrollo de habilidades, fuerza y acondicionamiento, e inteligencia de juego para crear jugadores completos que puedan competir con confianza y disciplina. Cada sesión y evento está diseñado con intención, enfocado en maximizar el crecimiento, refinar la técnica y empujar a los atletas más allá de sus límites.",
     // --- CAMBIO: Eliminado "áreas dedicadas de entrenamiento de fuerza" ---
-    p2: "Nuestras instalaciones de última generación cuentan con múltiples canchas y un equipo de entrenadores profesionales con experiencia a nivel colegial y profesional. Estamos comprometidos a proporcionar un ambiente seguro, positivo y competitivo para atletas de todas las edades y niveles de habilidad.",
-    missionTitle: "Nuestra Misión",
-    missionP: "Empoderar a los atletas para que alcancen su máximo potencial dentro y fuera de la cancha a través de un entrenamiento de alta calidad, refuerzo positivo y una comunidad fuerte.",
+    p2: "Estamos comprometidos a brindar una experiencia enfocada en el atleta que priorice la justicia, las oportunidades y el desarrollo a largo plazo. Desde lecciones privadas y entrenamiento grupal hasta torneos competitivos, Capital City Volleyball está redefiniendo el estándar al construir una cultura de responsabilidad, consistencia y excelencia. Nuestra misión es no solo mejorar el rendimiento, sino formar competidores disciplinados preparados para tener éxito tanto dentro como fuera de la cancha.",
   },
   programsPage: {
     title: "Nuestros Programas",
@@ -137,7 +135,7 @@ export const dictionary = {
         id: "youth",
         title: "Clínicas Juveniles (8-12 Años)",
         description: "Nuestras Clínicas Juveniles se centran en los fundamentos. Usamos ejercicios divertidos y entrenamiento positivo para enseñar pase, colocación, remate y servicio. ¡Perfecto para principiantes!",
-        features: ["Sesiones semanales de 1 hora", "Enfoque en fundamentos", "Baja proporción de jugadores por entrenador", "Ambiente positivo"]
+        features: ["Enfoque en fundamentos", "Baja proporción de jugadores por entrenador", "Ambiente positivo"]
       },
       {
         // --- CAMBIOS ---
@@ -156,7 +154,7 @@ export const dictionary = {
       {
         id: "private",
         title: "Entrenamiento Privado",
-        description: "Sesiones individuales o en grupos pequeños con nuestros mejores entrenadores. Recibe retroalimentación personalizada y ejercicios específicos para perfeccionar tu juego.",
+        description: "El entrenamiento privado ofrece coaching personalizado para refinar la técnica, construir consistencia y elevar el rendimiento a través de la repetición enfocada, retroalimentación y sesiones de desarrollo estructurado.",
         // --- CAMBIO ---
         features: ["Atención personalizada", "Planes de ejercicios a medida", "Horarios flexibles"]
       }

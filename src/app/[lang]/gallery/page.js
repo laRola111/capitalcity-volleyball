@@ -4,6 +4,10 @@ import Image from 'next/image';
 
 // Placeholder images
 const images = [
+  "/foto1.jpeg",
+  "/foto2.jpeg",
+  "/foto3.jpeg",
+  "/home-feature..jpeg",
   "/IMG-20251111-WA0004.jpg",
   "/IMG-20251110-WA0001.jpg",
   "/IMG-20251111-WA0005.jpg",

@@ -9,7 +9,7 @@ export const dictionary = {
   },
   hero: {
     title: "Capital City Volleyball",
-    subtitle: "Training Volleyball facility for kids and adults in Pflugerville, TX. Building confidence and skill on and off the court.",
+    subtitle: "Capital City Volleyball develops athletes through elite training, competitive play, and personalized coaching, building disciplined competitors committed to growth and performance excellence.",
     button: "View Our Programs",
     imageAlt: "Capital City Volleyball player serving a ball",
   },
@@ -92,14 +92,14 @@ export const dictionary = {
         title: "Womens Tournament",
         subtitle: "", // Eliminado "Registrations Open"
         description: "Get your team ready for our upcoming women's tournament.",
-        imageUrl: "/imgUpcoming-1.png"
+        imageUrl: "/foto1.jpeg"
       },
       {
         // --- CAMBIO ---
         title: "Mens Tournament",
         subtitle: "", // Eliminado "Registrations Open"
         description: "Compete in our fast-paced men's tournament.",
-        imageUrl: "/imgUpcoming-2.png"
+        imageUrl: "/foto3.jpeg"
       }
     ]
   },
@@ -109,11 +109,11 @@ export const dictionary = {
     p1: "We are dedicated to developing every athlete to become a person of character, skill, and confidence.",
     vision: {
       title: "Our Vision",
-      description: "To be the premier destination for volleyball development in Central Texas, fostering a love for the game."
+      description: "Our vision is to elevate volleyball by developing disciplined athletes, transforming competition, and building a respected performance-driven community nationwide."
     },
     mission: {
       title: "Our Mission",
-      description: "Empower athletes with elite coaching in a positive environment, building leaders on and off the court."
+      description: "To develop athletes through elite training, competitive opportunities, and disciplined coaching while delivering a fair, athlete-first volleyball experience."
     }
   },
   gallerySlider: {
@@ -122,11 +122,9 @@ export const dictionary = {
   },
   aboutPage: {
     title: "About Capital City Volleyball",
-    p1: "Founded in 2023, Capital City Volleyball was born from a passion for the sport and a desire to build a premier training facility for the Pflugerville and North Austin community. We believe volleyball is more than just a game—it's a tool for building character, discipline, and lifelong friendships.",
+    p1: "Capital City Volleyball is a performance-driven organization dedicated to developing athletes through elite training, structured coaching, and high-level competition. Our approach combines skill development, strength and conditioning, and game intelligence to create well-rounded players who can compete with confidence and discipline. Every session and event is designed with intention—focused on maximizing growth, refining technique, and pushing athletes beyond their limits.",
     // --- CAMBIO: Eliminado "Dedicated strength training areas" ---
-    p2: "Our state-of-the-art facility features multiple courts and a team of professional coaches with collegiate and pro-level experience. We are committed to providing a safe, positive, and competitive environment for athletes of all ages and skill levels.",
-    missionTitle: "Our Mission",
-    missionP: "To empower athletes to achieve their full potential on and off the court through high-quality coaching, positive reinforcement, and a strong community.",
+    p2: "We are committed to delivering an athlete-first experience that prioritizes fairness, opportunity, and long-term development. From private lessons and group training to competitive tournaments, Capital City Volleyball is redefining the standard by building a culture of accountability, consistency, and excellence. Our mission is to not only improve performance, but to shape disciplined competitors prepared to succeed both on and off the court.",
   },
   programsPage: {
     title: "Our Programs",
@@ -136,7 +134,7 @@ export const dictionary = {
         id: "youth",
         title: "Youth Clinics (Ages 8-12)",
         description: "Our Youth Clinics focus on the fundamentals. We use fun drills and positive coaching to teach passing, setting, hitting, and serving. Perfect for beginners!",
-        features: ["Weekly 1-hour sessions", "Focus on fundamentals", "Low player-to-coach ratio", "Positive environment"]
+        features: ["Focus on fundamentals", "Low player-to-coach ratio", "Positive environment"]
       },
       {
         // --- CAMBIOS ---
@@ -155,7 +153,7 @@ export const dictionary = {
       {
         id: "private",
         title: "Private Training",
-        description: "One-on-one or small group sessions with our top coaches. Get personalized feedback and targeted drills to perfect your game.",
+        description: "Private training delivers personalized coaching to refine technique, build consistency, and elevate performance through focused repetition, feedback, and structured development sessions.",
         // --- CAMBIO ---
         features: ["Personalized attention", "Custom drill plans", "Flexible scheduling"]
       }
