@@ -22,7 +22,7 @@ export default function HomeMission({ lang, dict }) {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <Image
-              src="/missionImg.png"
+              src="/tem-1.jpeg"
               alt="Team huddle"
               fill
               style={{ objectFit: 'cover' }}

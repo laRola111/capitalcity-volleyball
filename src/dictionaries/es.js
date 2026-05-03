@@ -117,10 +117,19 @@ export const dictionary = {
 
   },
   aboutPage: {
-    title: "Sobre Capital City Volleyball",
-    p1: "Capital City Volleyball es una organización enfocada en el rendimiento, dedicada a desarrollar atletas a través del entrenamiento de élite, coaching estructurado y competencia de alto nivel. Nuestro enfoque combina el desarrollo de habilidades, fuerza y acondicionamiento, e inteligencia de juego para crear jugadores completos que puedan competir con confianza y disciplina. Cada sesión y evento está diseñado con intención, enfocado en maximizar el crecimiento, refinar la técnica y empujar a los atletas más allá de sus límites.",
-    // --- CAMBIO: Eliminado "áreas dedicadas de entrenamiento de fuerza" ---
-    p2: "Estamos comprometidos a brindar una experiencia enfocada en el atleta que priorice la justicia, las oportunidades y el desarrollo a largo plazo. Desde lecciones privadas y entrenamiento grupal hasta torneos competitivos, Capital City Volleyball está redefiniendo el estándar al construir una cultura de responsabilidad, consistencia y excelencia. Nuestra misión es no solo mejorar el rendimiento, sino formar competidores disciplinados preparados para tener éxito tanto dentro como fuera de la cancha.",
+    title: "SOBRE NOSOTROS",
+    p1: "Capital City Volleyball es más que un club—es una comunidad basada en la pasión, el trabajo en equipo y la búsqueda incesante de la excelencia.",
+    p2: "Estamos dedicados a desarrollar atletas hábiles mientras construimos confianza, carácter y amistades para toda la vida—dentro y fuera de la cancha.",
+    p3: "A través del trabajo duro, una cultura positiva y un compromiso inquebrantable, nos esforzamos por empoderar a cada atleta para que alcance su máximo potencial y tenga un impacto en el juego y en la vida.",
+    develop: "DESARROLLO",
+    developDesc: "Construyendo habilidades, fuerza y confianza",
+    teamwork: "TRABAJO EN EQUIPO",
+    teamworkDesc: "Más fuertes juntos en la cancha y en la vida",
+    excellence: "EXCELENCIA",
+    excellenceDesc: "Compite con propósito e integridad",
+    community: "COMUNIDAD",
+    communityDesc: "Una familia solidaria que te respalda",
+    slogan: "UN EQUIPO. UNA CIUDAD. UNA META. CAPITAL CITY.",
   },
   programsPage: {
     title: "Nuestros Programas",

@@ -7,6 +7,14 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 const images = [
+  "/tem-1.jpeg",
+  "/tem-2.jpeg",
+  "/tem-3.jpeg",
+  "/tem-4.jpeg",
+  "/tem-5.jpeg",
+  "/tem-6.jpeg",
+  "/tem-7.jpeg",
+  "/tem-8.jpeg",
   "/IMG-20251111-WA0004.jpg",
   "/IMG-20251110-WA0001.jpg",
   "/IMG-20251111-WA0005.jpg",
