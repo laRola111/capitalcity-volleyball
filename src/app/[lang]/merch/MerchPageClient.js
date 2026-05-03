@@ -3,31 +3,10 @@
 
 import { useState, useRef } from 'react';
 import Image from 'next/image';
-import { FaWhatsapp, FaShoppingCart, FaCheckCircle, FaEnvelope } from 'react-icons/fa';
+import { FaShoppingCart, FaCheckCircle, FaEnvelope } from 'react-icons/fa';
 
 // ── Datos de contacto reales ────────────────────────────────────────────────
-const WHATSAPP_NUMBER = '15128033936'; // +1 512-803-3936
 const CONTACT_EMAIL   = 'ian.developer.tec@gmail.com'; // 🔧 TEST — cambiar a Capitalcity.volleyballatx@gmail.com para producción
-
-/**
- * Genera un link de WhatsApp con todos los detalles del pedido pre-escritos.
- */
-function buildWhatsAppLink({ name, phone, email, product, color, size, qty, notes }) {
-  const msg = [
-    '🏐 *Capital City Volleyball — Merch Order*',
-    '',
-    `👤 Name: ${name}`,
-    `📱 Phone: ${phone}`,
-    email ? `📧 Email: ${email}` : null,
-    `🛒 Item: ${product}`,
-    `🎨 Color: ${color}`,
-    size ? `📐 Size: ${size}` : null,
-    `🔢 Qty: ${qty}`,
-    notes ? `📝 Notes: ${notes}` : null,
-  ].filter(Boolean).join('\n');
-
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
-}
 
 /**
  * Genera un link mailto: con todos los detalles del pedido como cuerpo del correo.
@@ -39,7 +18,6 @@ function buildMailtoLink({ name, phone, email, product, color, size, qty, notes 
     'Capital City Volleyball — Merch Order',
     '─────────────────────────',
     `Name:     ${name}`,
-    `Phone:    ${phone}`,
     email ? `Email:    ${email}` : null,
     `Item:     ${product}`,
     `Color:    ${color}`,
@@ -63,18 +41,16 @@ export default function MerchPageClient({ lang, dict }) {
   function getFormData() {
     const fd = new FormData(formRef.current);
     const name    = fd.get('name')?.trim();
-    const phone   = fd.get('phone')?.trim();
     const product = fd.get('product')?.trim();
     const color   = fd.get('color')?.trim();
 
-    if (!name || !phone || !product || !color) {
-      alert('Please fill in Name, Phone, Item, and Color before sending.');
+    if (!name || !product || !color) {
+      alert('Please fill in Name, Item, and Color before sending.');
       return null;
     }
 
     return {
       name,
-      phone,
       email:   fd.get('email')?.trim()    || '',
       product,
       color,
@@ -117,19 +93,7 @@ export default function MerchPageClient({ lang, dict }) {
     }
   }
 
-  // ── Botón WhatsApp — SOLO abre WhatsApp con el pedido redactado ─────────────
-  function handleWhatsAppOrder(e) {
-    e.preventDefault();
-    const data = getFormData();
-    if (!data) return;
-
-    // Abre WhatsApp en nueva pestaña con el pedido pre-escrito
-    window.open(buildWhatsAppLink(data), '_blank');
-
-    setSubmitted(true);
-    formRef.current.reset();
-    setSelectedProduct(null);
-  }
+  // (Botón WhatsApp eliminado)
 
   return (
     <div className="bg-white min-h-screen">
@@ -232,25 +196,15 @@ export default function MerchPageClient({ lang, dict }) {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-primary mb-1">{t.form.phone} *</label>
+                  <label className="block text-sm font-semibold text-primary mb-1">{t.form.email} *</label>
                   <input
-                    name="phone"
-                    type="tel"
+                    name="email"
+                    type="email"
                     required
                     className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition"
-                    placeholder="(512) 000-0000"
+                    placeholder="your@email.com"
                   />
                 </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-primary mb-1">{t.form.email}</label>
-                <input
-                  name="email"
-                  type="email"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition"
-                  placeholder="your@email.com"
-                />
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
@@ -319,32 +273,20 @@ export default function MerchPageClient({ lang, dict }) {
 
               {/* Nota */}
               <p className="text-xs text-gray-400 text-center">
-                Choose how you want to send your order — Email or WhatsApp.
+                Click to send your order securely via Email.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-2">
-
+              <div className="flex justify-center pt-2">
                 {/* 📧 Email — Llama a la API de Resend */}
                 <button
                   type="button"
                   onClick={handleEmailOrder}
                   disabled={isSending}
-                  className="flex-1 flex items-center justify-center gap-2 bg-accent text-white font-bold py-4 px-6 rounded-xl hover:bg-accent-light transition-colors duration-300 text-lg shadow-lg disabled:opacity-50"
+                  className="w-full sm:w-2/3 flex items-center justify-center gap-2 bg-accent text-white font-bold py-4 px-6 rounded-xl hover:bg-accent-light transition-colors duration-300 text-lg shadow-lg disabled:opacity-50"
                 >
                   <FaEnvelope size={18} />
-                  {isSending ? 'Sending...' : 'Send via Email'}
+                  {isSending ? 'Sending...' : 'Send Order'}
                 </button>
-
-                {/* 💬 WhatsApp — SOLO abre WhatsApp con los datos del form */}
-                <button
-                  type="button"
-                  onClick={handleWhatsAppOrder}
-                  className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-xl transition-colors duration-300 text-lg shadow-lg"
-                >
-                  <FaWhatsapp size={22} />
-                  Send via WhatsApp
-                </button>
-
               </div>
             </form>
           )}

@@ -6,7 +6,6 @@ import logo from '../../../public/logo3.png';
 
 // Info del Cliente
 const contactData = {
-  phone: '(512) 803-3936',
   email: 'Capitalcity.volleyballatx@gmail.com',
 };
 
@@ -69,11 +68,6 @@ export default function Footer({ lang, dict }) {
           <div className="md:justify-self-start">
              <h3 className="text-base font-semibold text-white mb-4">{dict.footer.contactInfo}</h3>
              <address className="space-y-2 text-sm not-italic text-gray-300">
-               <p>
-                 <a href={`tel:${contactData.phone}`} className=" text-white hover:text-white transition-colors">
-                   {contactData.phone}
-                 </a>
-               </p>
                <p className="break-all">
                  <a href={`mailto:${contactData.email}`} className=" text-white hover:text-white transition-colors">
                    {contactData.email}

@@ -7,8 +7,6 @@ import { sendEmail } from '@/app/actions/send-email';
 
 // Info del Cliente (Email público)
 const contactData = {
-  phone: '(512) 803-3936',
-  phoneHref: '+15128033936',
   email: 'infor@capitalcity-volleyball.com', 
 };
 
@@ -70,10 +68,6 @@ export default function ContactPageClient({ lang, dict }) {
               <label htmlFor="email" className="block text-sm font-medium text-foreground">{t.form.email}</label>
               <input type="email" name="email" id="email" required className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-accent focus:border-accent" />
             </div>
-             <div>
-              <label htmlFor="phone" className="block text-sm font-medium text-foreground">{t.form.phone}</label>
-              <input type="tel" name="phone" id="phone" className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-accent focus:border-accent" />
-            </div>
             <div>
               <label htmlFor="subject" className="block text-sm font-medium text-foreground">{t.form.subject}</label>
               <input type="text" name="subject" id="subject" required className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-accent focus:border-accent" />
@@ -102,16 +96,7 @@ export default function ContactPageClient({ lang, dict }) {
           {/* Información de Contacto (Email público) */}
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold text-primary">{t.info.title}</h2>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
-              <FaPhone className="text-accent text-xl mt-1 flex-shrink-0" />
-              <div>
-                <h3 className="text-lg font-semibold text-foreground">{t.info.phone}</h3>
-                <a href={`tel:${contactData.phoneHref}`} className="text-muted hover:text-accent transition-colors">
-                  {contactData.phone}
-                </a>
-              </div>
-            </div>
+
             <div className="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
               <FaEnvelope className="text-accent text-xl mt-1 flex-shrink-0" />
               <div>

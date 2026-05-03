@@ -7,17 +7,16 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(req) {
   try {
     const data = await req.json();
-    const { name, phone, email, product, color, size, qty, notes } = data;
+    const { name, email, product, color, size, qty, notes } = data;
 
     // Validación básica
-    if (!name || !phone || !product || !color) {
+    if (!name || !product || !color) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
     const emailHtml = `
       <h2>New Merch Order - Capital City Volleyball</h2>
       <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Phone:</strong> ${phone}</p>
       <p><strong>Email:</strong> ${email || 'N/A'}</p>
       <hr />
       <h3>Order Details</h3>
