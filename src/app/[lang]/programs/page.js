@@ -3,9 +3,9 @@ import { getDictionary } from '@/lib/dictionaries';
 import Image from 'next/image';
 import { FaCheckCircle } from 'react-icons/fa';
 
-// Only the private training section gets an image (coaching photo)
+// Only the private training section gets an image
 const sectionImages = {
-  private: "/tornament-woman-capital.jpeg", // coaching photo placeholder
+  private: "/private-clase.jpeg", // 1024x1536 — portrait 2:3
 };
 
 export default async function ProgramsPage({ params: { lang } }) {
@@ -36,14 +36,17 @@ export default async function ProgramsPage({ params: { lang } }) {
                 id={section.id}
                 className={`scroll-mt-24 ${imgSrc ? 'grid grid-cols-1 lg:grid-cols-2 gap-10 items-center' : 'max-w-3xl'}`}
               >
-                {/* Imagen solo para Private Training */}
+                {/* Imagen Private Training — portrait 2:3 (1024x1536) */}
                 {imgSrc && (
-                  <div className={`relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl ${index % 2 === 1 ? 'lg:order-last' : ''}`}>
+                  <div
+                    className={`relative w-full rounded-xl overflow-hidden shadow-2xl ${index % 2 === 1 ? 'lg:order-last' : ''}`}
+                    style={{ aspectRatio: '2/3', maxHeight: '600px' }}
+                  >
                     <Image
                       src={imgSrc}
                       alt={`${section.title} volleyball program`}
                       fill
-                      style={{ objectFit: 'cover' }}
+                      style={{ objectFit: 'contain', objectPosition: 'center' }}
                       className="bg-gray-100"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />

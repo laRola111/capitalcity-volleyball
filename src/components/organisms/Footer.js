@@ -7,11 +7,7 @@ import logo from '../../../public/logo3.png';
 // Info del Cliente
 const contactData = {
   phone: '(512) 803-3936',
-  // --- CAMBIO DE EMAIL ---
-  email: 'infor@capitalcity-volleyball.com',
-  // --- DIRECCIÓN ELIMINADA ---
-  // address: '13603 Letti Ln, Pflugerville, TX 78660',
-  // googleMapsLink: 'http://googleusercontent.com/maps/google.com/1'
+  email: 'Capitalcity.volleyballatx@gmail.com',
 };
 
 const SocialLink = ({ href, icon: Icon, label }) => (
@@ -30,11 +26,12 @@ export default function Footer({ lang, dict }) {
   const currentYear = new Date().getFullYear();
   
   const quickLinks = [
-    { name: dict.navbar.home, href: `/${lang}/` },
-    { name: dict.navbar.about, href: `/${lang}/about` },
+    { name: dict.navbar.home,     href: `/${lang}/` },
+    { name: dict.navbar.about,    href: `/${lang}/about` },
     { name: dict.navbar.programs, href: `/${lang}/programs` },
-    { name: dict.navbar.gallery, href: `/${lang}/gallery` },
-    { name: dict.navbar.contact, href: `/${lang}/contact` },
+    { name: dict.navbar.gallery,  href: `/${lang}/gallery` },
+    { name: dict.navbar.merch,    href: `/${lang}/merch` },
+    { name: dict.navbar.contact,  href: `/${lang}/contact` },
   ];
 
   return (
