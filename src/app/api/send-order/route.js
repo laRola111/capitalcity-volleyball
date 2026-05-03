@@ -28,15 +28,12 @@ export async function POST(req) {
       <p><strong>Notes:</strong> ${notes || 'None'}</p>
     `;
 
-    // Tomamos el correo destino desde la variable de entorno
+    // Tomamos los correos desde las variables de entorno
     const toEmail = process.env.CONTACT_FORM_EMAIL || 'Capitalcity.volleyballatx@gmail.com';
+    const fromEmail = process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';
 
-    // IMPORTANTE: Hasta que no se verifique el dominio 'capitalcity-volleyball.com' en Resend,
-    // el remitente "from" debe ser un dominio de prueba o uno que ya esté verificado en tu cuenta.
-    // Además, el plan gratuito de Resend (sin dominio verificado) solo te permite enviar correos a la dirección
-    // de email registrada en tu cuenta de Resend (la tuya personal).
     const { data: resendData, error } = await resend.emails.send({
-      from: 'Capital City Orders <onboarding@resend.dev>', 
+      from: `Capital City Orders <${fromEmail}>`, 
       to: [toEmail], 
       subject: `Merch Order - ${product} - ${name}`,
       html: emailHtml,
