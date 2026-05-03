@@ -1,10 +1,11 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-// Utilizamos la variable de entorno para la API key de Resend
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req) {
+  // Inicializamos Resend dentro de la función para que no rompa el build de Vercel
+  // si las variables de entorno aún no están configuradas en el panel.
+  const resend = new Resend(process.env.RESEND_API_KEY || 're_dummy_key');
+
   try {
     const data = await req.json();
     const { name, email, product, color, size, qty, notes } = data;
